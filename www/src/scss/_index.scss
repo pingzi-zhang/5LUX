@@ -1,7 +1,348 @@
 #nav{
   height: 520px;
-  width: 1274px;
-  margin: 0 auto;
   background-color: #aec1c8;
+  .img_cont{
+    width: $wrapWidth;
+    margin: 0 auto;
+  }
+}
+#main{
+  .wrap{
+    width: $wrapWidth;
+    margin: 0 auto;
+    .title{
+      @include set-height(37px);
+    }
+    .box{
+      box-shadow: 0px 3px 4px 4px #cfcfcf;
+    }
+  }
+}
+#main .popuEvent{
+  height: 315px;
+  .title{
+    margin-top: 20px;
+    h3{
+      @include set-height(37px);
+      background: url("../image/index/hotbg.jpg") no-repeat;
+      text-indent: 193px;
+    }
+  }
+  .box{
+    height: 206px;
+    padding: 10px 15px 10px 5px;
+    div{
+      float: left;
+    }
+    .left{
+      margin-right: 10px;
+    }
+  }
+}
+#main .classic{
+  height: 414px;
+  @extend .clearfix;
+  background-color: $bg;
+  .title{
+    margin-top: 20px;
+    h3{
+      @include set-height(37px);
+      background: url("../image/index/recommendbg.jpg") no-repeat;
+      text-indent: 124px;
+    }
+  }
+  .box{
+    height: 306px;
+    padding: 10px 15px 10px 5px;
+    div{
+      float: left;
+    }
+    .left{
+      height: 306px;
+      width: 236px;
+      margin-left: 4px;
+    }
+    .center{
+      margin: 0 9px;
+    }
+  }
+}
+#main .topSales{
+  height: 481px;
+  @extend .clearfix;
+  .title{
+    h3{
+      @include set-height(37px);
+      background: url("../image/index/topsales.jpg") no-repeat;
+      text-indent: 163px;
+    }
+  }
+  .box{
+    height: 383px;
+    padding: 10px 15px 10px 5px;
+  }
+}
+#main .topSales .box{
+  ul{
+    height: 42px;
+    margin-left: 3px;
+    li{
+      float: left;
+      a{
+        display: inline-block;
+        @include link-colors(#000000);
+        @include textCenter(42px);
+        width: 194px;
+        background-color: #e0e0e0;
+        border-right: 1px solid #ffffff;
+      }
+    }
+  }
+  dl{
+    width: 178px;
+    height: 342px;
+    float: left;
+    margin-left: 13px;
+    dt{
+      height: 237px;
+      margin-bottom: 20px;
+      span{
+        display: inline-block;
+        height: 237px;
+      }
+    }
+    dd{
+      @include textCenter(27px);
+      overflow: hidden;
+      &.price{
+        color: $priceCol;
+      }
+    }
+  }
+}
+#main .brand{
+  height: 447px;
+  @extend .clearfix;
+  background-color: $bg;
+  .wrap{
+    background-color: #ffffff;
+  }
+  .title{
+    background-color: $bg;
+    h3{
+      @include set-height(37px);
+      background: url("../image/index/barandHbg.jpg") no-repeat;
+      text-indent: 254px;
+      float: left;
+    }
+    a{
+      @include link-colors(#757272 ,#757272);
+      display: inline-block;
+      font-weight: bold;
+       float: right;
+    }
+  }
+  .box{
+    height: 390px;
+    padding: 10px 15px 10px 5px;
+  }
+}
+#main .brand .box{
+  .list{
+    height: 240px;
+    margin-top: 19px;
+    dl{
+      display: inline-block;
+      height: 240px;
+      width: 179px;
+      float: left;
+      margin: 0 10px;
+      &.last{
+        margin-right: 0;
+      }
+    }
+  }
+  ul{
+    width: 972px;
+    height: 120px;
+    margin-top: 15px;
+    margin-left: 5px;
+    li{
+      float: left;
+      width: 100px;
+      height: 37px;
+      background-color: #e0e0e0;
+      margin: 0 0 3px 3px;
+      padding:10px 2px ;
+      a{
+        display: inline-block;
+        width: 100px;
+        height: 38px;
+        background: url("../image/index/brand_icon.jpg") no-repeat;
+        &.a2{
+          background-position: 0 -40px;
+        }
+        &.a3{
+          background-position: 0 -81px;
+        }
+        &.a4{
+          background-position: 0 -121px;
+        }
+        &.a5{
+          background-position: 0 -162px;
+        }
+        &.a6{
+          background-position: 0 -202px;
+        }
+        &.a7{
+          background-position: 0 -243px;
+        }
+        &.a8{
+          background-position: 0 -284px;
+        }
+        &.a9{
+          background-position: 0 -326px;
+        }
+        &.a10{
+          background-position: 0 -368px;
+        }
 
+        &.a11{
+          background-position: 0 -410px;
+        }
+        &.a12{
+          background-position: 0 -452px;
+        }
+        &.a13{
+          background-position: 0 -494px;
+        }
+        &.a14{
+          background-position: 0 -536px;
+        }
+        &.a15{
+          background-position: 0 -578px;
+        }
+        &.a16{
+          background-position: 2px -620px;
+        }
+        &.a17{
+          background-position: 2px -662px;
+        }
+        &.a18{
+          background-position: 2px -705px;
+        }
+      }
+    }
+  }
+}
+
+#main .show{
+  @extend .clearfix;
+  .wrap{
+    .title{
+      height: 50px;
+    }
+  }
+  .title{
+    h3{
+      @include set-height(55px);
+      float: left;
+    }
+    ul{
+      float: right;
+      li{
+        float: left;
+      }
+      li a{
+        display: inline-block;
+        font-size: 10px;
+        font-weight: normal;
+        padding-right: 27px;
+      }
+    }
+    a{
+      @include link-colors(#757272 ,#757272);
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 40px;
+      float: right;
+
+    }
+  }
+  .box{
+    margin-top: 60px;
+    height: 715px;
+    padding: 0;
+  }
+}
+#main .show .list{
+  height: 625px;
+  margin-top: 38px;
+  @extend .clearfix;
+  div{
+    float: left;
+    &.left{
+      float: left;
+      height: 307px;
+      width: 618px;
+      margin-right: 5px;
+      .bg{
+        width: 618px;
+        height: 115px;
+        position: relative;
+        background-color: #d4f6ff;
+        img{
+          position: absolute;
+          bottom: 40px;
+          right: 45px;
+        }
+      }
+    }
+    &.right{
+      height: 307px;
+      width: 353px;
+    }
+    &.bottom{
+      height: 317px;
+      width: 976px;
+      background-color: yellow;
+    }
+  }
+}
+#main .show .list .right{
+  div{
+    width: 336px;
+    height: 150px;
+    padding-left: 17px;
+    line-height: 25px;
+    ul{
+      margin-top: 20px;
+      float: left;
+    }
+    img{
+      float: right;
+      margin: 15px 26px 0 0 ;
+    }
+    &.Man{
+      background-color: #e8f1ff;
+      margin-bottom: 7px;
+    }
+    &.Gu{
+      background-color: #ffe5e8;
+    }
+  }
+}
+#main .show .box .list .left .txt{
+  margin: 57px 0 0 40px;
+  height: 136px;
+  line-height: 25px;
+}
+#main .show .handbag{
+  padding: 0 10px;
+  .title{
+    h3{
+      background: url("../image/index/handbagbg.jpg") no-repeat;
+      text-indent: 181px;
+    }
+  }
 }
