@@ -1,0 +1,19 @@
+@mixin link-colors($normal:#ffffff, $hover:#ddae5e, $visited:#ffffff) {
+  &:hover { color: $hover; }
+  &:visited { color: $visited; }
+  color: $normal;
+}
+
+@mixin set-height($height){
+  height: $height;
+  line-height: $height;
+}
+
+@mixin textCenter($height){
+  text-align: center;
+  @include set-height($height);
+}
+@mixin containerCenter($width){
+  width: $width;
+  margin: 0 auto;
+}
