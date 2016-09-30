@@ -1,12 +1,68 @@
-#nav{
+#banner {
+  width: 1422px;
   height: 520px;
-  background-color: #aec1c8;
-  .img_cont{
-    width: $wrapWidth;
-    margin: 0 auto;
-  }
+  position: relative;
+  overflow: hidden;
 }
+#banner a {
+  width: 27px;
+  height: 48px;
+  display: block;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+
+}
+#banner .prev{
+    background: url("../image/icon/btnicon.jpg") 0px 0;
+    left: 200px;
+  }
+#banner .next{
+  right: 200px;
+  background: url("../image/icon/btnicon.jpg") 0px -51px;
+}
+
+#banner .scroll {
+  width: 1440px;
+  height: 520px;
+  background: #abcdef;
+  position: relative;
+  overflow: hidden;
+}
+#banner .scroll img {
+  position: absolute;
+  left: 1440px;
+
+}
+#banner .scroll img.first {
+  left: 0;
+}
+#banner .btn {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    width: 200px;
+    background: #918f8f;
+}
+#banner .btn span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ffffff;
+    float: left;
+    margin: 6px;
+    border-radius: 50%;
+    background: #b7b6b4;
+}
+
+#banner .btn span.hover {
+   background: #cc0001;
+}
+
 #main{
+  @extend .clearfix;
   .wrap{
     width: $wrapWidth;
     margin: 0 auto;
@@ -98,14 +154,17 @@
       }
     }
   }
+}
+#main .topSales .box,#main .show .list .bottom{
   dl{
-    width: 178px;
+    width: 184px;
     height: 342px;
     float: left;
-    margin-left: 13px;
+    margin-left: 7px;
     dt{
       height: 237px;
       margin-bottom: 20px;
+      text-align: center;
       span{
         display: inline-block;
         height: 237px;
@@ -120,6 +179,7 @@
     }
   }
 }
+
 #main .brand{
   height: 447px;
   @extend .clearfix;
@@ -240,7 +300,8 @@
   @extend .clearfix;
   .wrap{
     .title{
-      height: 50px;
+      height: 45px;
+      padding-top: 5px;
     }
   }
   .title{
@@ -272,7 +333,7 @@
   .box{
     margin-top: 60px;
     height: 715px;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 #main .show .list{
@@ -290,7 +351,6 @@
         width: 618px;
         height: 115px;
         position: relative;
-        background-color: #d4f6ff;
         img{
           position: absolute;
           bottom: 40px;
@@ -305,7 +365,6 @@
     &.bottom{
       height: 317px;
       width: 976px;
-      background-color: yellow;
     }
   }
 }
@@ -321,14 +380,10 @@
     }
     img{
       float: right;
-      margin: 15px 26px 0 0 ;
+      margin: 7px 25px 0 0 ;
     }
     &.Man{
-      background-color: #e8f1ff;
       margin-bottom: 7px;
-    }
-    &.Gu{
-      background-color: #ffe5e8;
     }
   }
 }
@@ -338,11 +393,186 @@
   line-height: 25px;
 }
 #main .show .handbag{
-  padding: 0 10px;
   .title{
     h3{
       background: url("../image/index/handbagbg.jpg") no-repeat;
       text-indent: 181px;
+    }
+  }
+  .list .left .bg{
+    background-color: #d4f6ff;
+  }
+  .list .right .Man{
+    background-color: #e8f1ff;
+  }
+  .list .right .Gu{
+    background-color: #ffe5e8;
+  }
+}
+#main .show .watches{
+  .title{
+    h3{
+      background: url("../image/index/watchh3.jpg") no-repeat;
+      text-indent: 172px;
+    }
+  }
+  .list .left .bg{
+    background-color: #d4d6fd;
+  }
+  .list .right .Man{
+    background-color: #fff1e8;
+  }
+  .list .right .Gu{
+    background-color: #e6ebff;
+  }
+}
+#main .show .cosmetic{
+  .title{
+    h3{
+      background: url("../image/index/cosmeh3.jpg") no-repeat;
+      text-indent: 188px;
+    }
+  }
+  .list .left {
+    background-color: #ffffe5;
+    .bg{
+      background-color: #9aaee9;
+    }
+  }
+  .list .right .Man{
+    background-color: #e1fef9;
+  }
+  .list .right .Gu{
+    background-color: #fff9e7;
+  }
+}
+#main .show .everyday{
+  height: 502px;
+  margin-top: 30px;
+  box-shadow: 0px 3px 4px 4px #cfcfcf;
+  .list{
+    height: 323px;
+    margin-top: 33px;
+    padding-left: 25px;
+  }
+}
+#main .show .everyday .list{
+  dl{
+    margin-left: 15px;
+    height: 323px;
+    float: left;
+    background-color: #f5f3f4;
+    dt{
+      border: 1px solid #c9c9c9;
+    }
+    dd{
+      padding-left: 22px;
+      line-height: 25px;
+      p,span{
+        display: inline-block;
+      }
+    }
+  }
+}
+#main .show .everyday .list dl dd{
+  span{
+    width: 76px;
+    @include set-height(21px);
+    background-color: #cf0201;
+    margin-left: 44px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+#main .promotion{
+  height: 786px;
+  background-color: $bg;
+  margin-top: 30px;
+  .title h3{
+    background: url("../image/index/prom_1.jpg") no-repeat;
+    text-indent: 178px;
+  }
+  .box{
+    height: 700px;
+    padding-top: 7px;
+    background-color: #ffffff;
+  }
+}
+#main .promotion .box .row{
+  height: 268px;
+  margin-top: 7px;
+  margin-left: 6px;
+  div{
+    float: left;
+    width: 240px;
+    margin-left: 6px;
+    height: 268px;
+    &.gray{
+      background-color: #f3f6ff;
+    }
+    &.blue{
+      background-color: #defbff;
+    }
+    &.pink{
+      background-color: #ffe3e2;
+    }
+  }
+  .special{
+    width: 487px;
+    display: inline-block;
+    position: relative;
+    a{
+      display: block;
+      position: absolute;
+      top: 240px;
+      left: 223px;
+      @include link-colors(#ffffff);
+      &.shop{
+        top:211px;
+        left: 316px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+#main .promotion .box .row div{
+  ul{
+    margin-top: 5px;
+    li{
+      width: 238px;
+      text-align: center;
+      h3{
+        line-height: 31px;
+      }
+      &.img{
+        height: 166px;
+      }
+      &.last{
+        margin-top: 7px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+#main .promotion .box .pay{
+  height: 114px;
+  margin-left: 6px;
+  margin-top: 8px;
+  ul{
+    width: 492px;
+    float: left;
+    height: 114px;
+    margin-left: 8px;
+    li{
+      float: left;
+      a{
+        float: left;
+        width: 160px;
+        height: 53px;
+        margin-bottom: 4px;
+        margin-right: 4px;
+      }
     }
   }
 }

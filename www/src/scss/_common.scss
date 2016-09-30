@@ -1,5 +1,77 @@
 #container{
-  //@include containerCenter($minWidth);
+  position: relative;
+}
+//siderbar
+#sidebar{
+  position: absolute;
+  right: 0;
+  height: 420px;
+  top: 350px;
+  z-index: 4;
+  width: 36px;
+  ul li{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 1px;
+    span{
+      position: absolute;
+      left: -100px;
+      display: none;
+      @include textCenter(33px);
+      color: #363636;
+      float: left;
+      width: 99px;
+      border: 1px solid #e4e4e4;
+      background-color: #ffffff;
+      border-right: none;
+      &.first{
+        border: none;
+        width: 101px;
+        background: none;
+      }
+    }
+    a{
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      float: left;
+      &.hover{
+        background-position-y:-125px;
+        background-color: #c69c6d;
+      }
+    }
+  }
+  .ul1{
+    margin-bottom: 124px;
+  }
+}
+
+#sidebar{
+  .ul1 a{
+    background: #333333 url("../image/icon/sidebar.png") -89px -157px;
+    &.a2{
+      background-position-x: -140px;
+    }
+    &.a3{
+      background-position-x: -202px;
+    }
+    &.a4{
+      background-position-x: -257px;
+    }
+  }
+  .ul2 a{
+    background: #333333 url("../image/icon/sidebar.png") -312px -157px;
+    &.a2{
+      background-position-x: -374px;
+    }
+    &.a3{
+      background-position-x: -374px;
+    }
+    &.a4{
+      background-position-x: -437px;
+    }
+  }
 }
 //header css
 #header{
@@ -80,6 +152,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 3px;
+  position: relative;
   .wrap{
     @include containerCenter($wrapWidth);
     li{
@@ -99,6 +172,231 @@
           font-weight: bold;
           background: #cf0101 url("../image/menu.jpg") no-repeat right top;
         }
+      }
+    }
+  }
+}
+#menu .downlist{
+  position: absolute;
+  display: none;
+  z-index: 3;
+  width: 135px;
+  background-color: #f2f7f7;
+  left: 209px;
+  top:56px;
+  opacity: 0.8;
+  filter:alpha(opacity=80);
+  li{
+    padding-left: 10px;
+    a{
+      @include link-colors(#010101,#c4a782,#010101);
+      display: inline-block;
+      @include set-height(37px);
+      padding-left: 45px;
+      background: url("../image/icon/brand_icon1.png") no-repeat;
+      &.a2{
+        background-position: 0 -35px;
+      }
+      &.a3{
+        background-position: 0 -66px;
+      }
+      &.a4{
+        background-position: 0 -96px;
+      }
+      &.a5{
+        background-position: 0 -131px;
+      }
+      &.a6{
+        background-position: 0 -163px;
+      }
+      &.a7{
+        background-position: 0 -196px;
+      }
+      &.a8{
+        background-position: 0 -226px;
+      }
+      &.a9{
+        background-position: 0 -260px;
+      }
+      &.a10{
+        background-position: 0 -294px;
+      }
+      &.a11{
+        background-position: 0 -324px;
+      }
+      &.a12{
+        background-position: 0 -360px;
+      }
+      &.a13{
+         background-position: 0 -386px;
+       }
+      &.a14{
+          background-position: 0 -420px;
+        }
+      &.a15{
+        background-position: 0 -453px;
+      }
+    }
+  }
+}
+#footer{
+  height: 305px;
+  margin-bottom: 24px;
+  background-color: $footerCol;
+  .wrap{
+    width: $wrapWidth;
+    margin: 0 auto;
+    background-color: yellow;
+  }
+  .top{
+    height: 119px;
+    border-bottom: 1px solid #797979;
+  }
+}
+#footer .top .news{
+  width: 315px;
+  float: left;
+  margin-left: 25px;
+  h1{
+    margin-top: 5px;
+    height: 40px;
+  }
+  p{
+    @include set-height(28px);
+    color: #ffffff;
+  }
+  .order{
+    width: 270px;
+    height: 27px;
+    input{
+      border: none;
+      float: left;
+      height: 27px;
+      &.txt{
+        width: 188px;
+      }
+      &.btn{
+        width: 72px;
+        margin-left: 10px;
+        text-align: left;
+        text-indent: 10px;
+        color: #ffffff;
+        background:#df1a24 url("../image/index/order.jpg") no-repeat 45px;
+      }
+    }
+  }
+}
+#footer .top .tip{
+  padding-top: 28px;
+  position: relative;
+  width: 290px;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: 22px;
+  float: left;
+  color: #fdfdfe;
+  font-size: 15px;
+  background-color: #de1a22;
+  p{
+    @include set-height(30px);
+    margin-left: 14px;
+    &.last{
+      margin-left: 98px;
+    }
+  }
+  img{
+    position: absolute;
+    top: 0;
+    left: -9px;
+  }
+}
+#footer .top dl{
+  color: #ffffff;
+  float: left;
+  width: 137px;
+  height: 66px;
+  border-left:1px solid #797979 ;
+  text-align: center;
+  padding-top: 19px;
+  margin-top: 18px;
+  dd{
+    @include set-height(24px);
+  }
+  &.weixin{
+    width: 111px;
+  }
+  &.code{
+    margin-top: 10px;
+    padding:0;
+    width: 94px;
+    border: none;
+  }
+}
+#footer .bottom{
+  margin-top: 12px;
+  text-align: center;
+  color: #ffffff;
+  dl{
+    width: 162px;
+    float: left;
+    dt{
+      text-align: center;
+      height: 42px;
+      width: 40px;
+      margin-left: 40%;
+      background: url("../image/icon/footericon.jpg") no-repeat;
+      &.dt2{
+        background-position: center -43px;
+      }
+      &.dt3{
+        background-position: 0 -86px;
+      }
+      &.dt4{
+        background-position: 0 -129px;
+      }
+      &.dt5{
+        background-position: 0 -172px;
+      }
+    }
+    dd{
+      @include set-height(32px);
+    }
+    &.fl{
+      margin-left: 425px;
+    }
+  }
+  .ul1{
+    clear: both;
+    margin-left: 135px;
+    li{
+      float: left;
+      padding:0 17px;
+      border-right: 1px solid #ffffff;
+      &.last{
+        border: none;
+      }
+    }
+  }
+  .ul2{
+    clear: both;
+    margin-left: 314px;
+    li{
+      @include set-height(49px);
+      color: #aaaaaa;
+      padding-right: 20px;
+      float: left;
+    }
+  }
+  .trade{
+    clear: both;
+    span{
+      display: inline-block;
+      text-indent: 23px;
+      &.span1{
+        background: url("../image/icon/shangwu.jpg") no-repeat left bottom;
+      }
+      &.span2{
+        background: url("../image/icon/360.jpg") no-repeat left bottom;
       }
     }
   }

@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <script src="lib/jquery-1.8.3.js"></script>
 </head>
 <body>
     <div id="container">
+        <div id="sidebar">
+            <ul class="ul1">
+                <li><span class="first"></span></span><a class="a1" href="#"></a></li>
+                <li><span>我的资产</span><a class="a2" href="#"></a></li>
+                <li><span>我喜欢的商品</span><a class="a3" href="#"></a></li>
+                <li><span>联系客服</span><a class="a4" href="#"></a></li>
+            </ul>
+            <ul class="ul2">
+                <li><span class="first"><img src="image/index/code.jpg"> </span><a class="a1" href="#"></a></li>
+                <li><span>意见反馈</span><a class="a2" href="#"></a></li>
+                <li><span>联系我们</span><a class="a3" href="#"></a></li>
+                <li><span>返回顶部</span><a class="a4" href="#"></a></li>
+            </ul>
+        </div>
         <div id="header">
             <div class="top">
                 <div class="wrap">
@@ -32,6 +47,23 @@
             </div>
         </div><!--header end-->
         <div id="menu">
+            <ul class="downlist">
+                <li><a class="a1" href="#">推荐品牌</a></li>
+                <li><a class="a2" href="#">箱包</a></li>
+                <li><a class="a3" href="#">美妆</a></li>
+                <li><a class="a4" href="#">服装</a></li>
+                <li><a class="a5" href="#">腕表</a></li>
+                <li><a class="a6" href="#">配饰</a></li>
+                <li><a class="a7" href="#">鞋靴</a></li>
+                <li><a class="a8" href="#">母婴</a></li>
+                <li><a class="a9" href="#">美酒</a></li>
+                <li><a class="a10" href="#">美食</a></li>
+                <li><a class="a11" href="#">家居</a></li>
+                <li><a class="a12" href="#">电子</a></li>
+                <li><a class="a13" href="#">办公</a></li>
+                <li><a class="a14" href="#">礼品</a></li>
+                <li><a class="a15" href="#">海外馆</a></li>
+            </ul>
             <div class="wrap">
                 <ul>
                     <li><a class="first" href="#">商品分类</a></li>
@@ -52,12 +84,30 @@
                 </ul>
             </div>
         </div>
-        <div id="nav">
-            <div class="img_cont">
-                <ul>
-                    <li><img src="image/index/nav_1.jpg"></li>
-                </ul>
+        <div id="banner">
+
+            <a href="javascript:void(0)" class="prev"></a>
+            <a href="javascript:void(0)" class="next"></a>
+
+            <div class="scroll">
+                <img class="first" src="image/index/nav_1.jpg" />
+                <img src="image/index/nav_2.jpg" />
+                <img src="image/index/nav_3.jpg" />
+                <img src="image/index/nav_4.jpg" />
+                <img src="image/index/nav_5.jpg" />
+                <img src="image/index/nav_6.jpg" />
+
             </div>
+
+            <div class="btn">
+                <span class="hover"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </div>
         <div id="main">
             <div class="popuEvent">
@@ -234,13 +284,335 @@
                                 </div>
                             </div>
                             <div class="bottom">
-
+                                <dl>
+                                    <dt><span></span><img src="image/index/handbag_4.jpg"> </dt>
+                                    <dd>loewe罗威</dd>
+                                    <dd class="price">¥6890.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/handbag_5.jpg"> </dt>
+                                    <dd>Hermes爱马仕</dd>
+                                    <dd class="price">¥14600.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/handbag_6.jpg"> </dt>
+                                    <dd>Moschino莫斯奇诺</dd>
+                                    <dd class="price">¥10220.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/handbag_7.jpg"> </dt>
+                                    <dd>Hermes爱马仕</dd>
+                                    <dd class="price">¥148000.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/handbag_8.jpg"> </dt>
+                                    <dd>Louis Vuitton/LV路易.威登</dd>
+                                    <dd class="price">¥10379.00</dd>
+                                </dl>
                             </div>
+                        </div>
+                    </div>
+                    <div class="box watches">
+                        <div class="title">
+                            <h3>经典腕表</h3>
+                            <a href="all">更多&gt;&gt;&nbsp;&nbsp;</a>
+                            <ul>
+                                <li><a href="#">Armani</a></li>
+                                <li><a href="#">IWC</a></li>
+                                <li><a href="#">Tissot</a></li>
+                                <li><a href="#">Longines</a></li>
+                                <li><a href="#">Rolex</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <div class="left">
+                                <div class="txt">
+                                    <h3>Roger Dubuis</h3>
+                                    <p>鳄鱼皮带男士机械腕表</p>
+                                    <a href="#"><img src="image/icon/go.jpg"></a>
+                                </div>
+                                <div class="bg">
+                                    <img src="image/index/watch_1.jpg"/>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="Man">
+                                    <ul>
+                                        <li><h3>Zeppelin</h3></li>
+                                        <li><p>维多利亚号女士系列腕表</p></li>
+                                    </ul>
+                                    <img src="image/index/watch_2.jpg"/>
+                                </div>
+                                <div class="Gu">
+                                    <ul>
+                                        <li><h3>Citizen</h3></li>
+                                        <li><p>男士光动能电波手表</p></li>
+                                    </ul>
+                                    <img src="image/index/watch_3.jpg"/>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <dl>
+                                    <dt><span></span><img src="image/index/watch_4.jpg"> </dt>
+                                    <dd>Cartier卡地亚</dd>
+                                    <dd class="price">¥75990.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/watch_5.jpg"> </dt>
+                                    <dd>Chopard萧邦</dd>
+                                    <dd class="price">¥185300.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/watch_6.jpg"> </dt>
+                                    <dd>Calvin Klein CK卡尔文.克莱恩</dd>
+                                    <dd class="price">¥1650.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/watch_7.jpg"> </dt>
+                                    <dd>Van Cleef & Arpels梵克雅宝</dd>
+                                    <dd class="price">¥774400.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/watch_8.jpg"> </dt>
+                                    <dd>Armani阿尼玛</dd>
+                                    <dd class="price">¥1390.00</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box cosmetic">
+                        <div class="title">
+                            <h3>美颜妆品</h3>
+                            <a href="all">更多&gt;&gt;&nbsp;&nbsp;</a>
+                            <ul>
+                                <li><a href="#">Chanel</a></li>
+                                <li><a href="#">Dir</a></li>
+                                <li><a href="#">Lancome</a></li>
+                                <li><a href="#">LA MER</a></li>
+                                <li><a href="#">Estee Lauder</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <div class="left">
+                                <div class="txt">
+                                    <h3>Guerlain娇兰</h3>
+                                    <p>御庭兰花极致全校修护乳霜</p>
+                                    <a href="#"><img src="image/icon/go.jpg"></a>
+                                </div>
+                                <div class="bg">
+                                    <img src="image/index/cosme_1.jpg"/>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="Man">
+                                    <ul>
+                                        <li><h3>Estee Lauder</h3></li>
+                                        <li><p>清澈净白淡斑精华露</p></li>
+                                    </ul>
+                                    <img src="image/index/cosme_2.jpg"/>
+                                </div>
+                                <div class="Gu">
+                                    <ul>
+                                        <li><h3>L'Occitane</h3></li>
+                                        <li><p>蜡菊复颜玉玲精华眼霜</p></li>
+                                    </ul>
+                                    <img src="image/index/cosme_3.jpg"/>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <dl>
+                                    <dt><span></span><img src="image/index/cosme_4.jpg"> </dt>
+                                    <dd>Jo Malone 祖玛龙</dd>
+                                    <dd class="price">¥499.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/cosme_5.jpg"> </dt>
+                                    <dd>La Mer海蓝之谜</dd>
+                                    <dd class="price">¥1980.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/cosme_6.jpg"> </dt>
+                                    <dd>Estee Lauder雅诗兰黛</dd>
+                                    <dd class="price">¥580.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/cosme_7.jpg"> </dt>
+                                    <dd>Kenzo高田贤三</dd>
+                                    <dd class="price">¥739.00</dd>
+                                </dl>
+                                <dl>
+                                    <dt><span></span><img src="image/index/cosme_8.jpg"> </dt>
+                                    <dd>Estee Lauder雅诗兰黛</dd>
+                                    <dd class="price">¥972.00</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="everyday">
+                        <div class="top">
+                            <img src="image/index/everydaytop.jpg">
+                        </div>
+                        <div class="list">
+                            <dl>
+                                <dt><img src="image/index/everyday_1.jpg"></dt>
+                                <dd><h4>宝宝服饰专卖 欧洲一线品牌童装</h4></dd>
+                                <dd><p>8天10小时44分钟结束</p><span>低至4.4折</span></dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="image/index/everyday_2.jpg"></dt>
+                                <dd><h4>户外POLO衫、T恤专场</h4></dd>
+                                <dd><p>20天10小时44分钟结束</p><span>低至179元</span></dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="image/index/everyday_3.jpg"></dt>
+                                <dd><h4>VERSACE 男士鞋履专场</h4></dd>
+                                <dd><p>8天10小时44分钟结束</p><span>低至3.2折</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion">
+                <div class="wrap">
+                    <div class="title">
+                        <h3>优惠活动</h3>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <div class="special">
+                                <img src="image/index/prom_2.jpg"/>
+                                <a class="shop" href="#"><img src="image/index/pro_shop_icon.jpg"/> </a>
+                            </div>
+                            <div class="gray">
+                                <ul>
+                                    <li><h3>男士长袖T恤专场</h3></li>
+                                    <li><h3>全场低至6.8折</h3></li>
+                                    <li class="img"><img src="image/index/prom_3.jpg"/></li>
+                                    <li class="last">Shop now ▶</li>
+                                </ul>
+                            </div>
+                            <div class="blue">
+                                <ul>
+                                    <li><h3>Marja Kurki丝巾专场</h3></li>
+                                    <li><h3>全场低至225元</h3></li>
+                                    <li class="img"><img src="image/index/prom_4.jpg"/></li>
+                                    <li class="last">Shop now ▶</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="pink">
+                                <ul>
+                                    <li><h3>OPI</h3></li>
+                                    <li><h3>全场低至99折</h3></li>
+                                    <li class="img"><img src="image/index/prom_7.jpg"/></li>
+                                    <li class="last">Shop now ▶</li>
+                                </ul>
+                            </div>
+                            <div class="pink">
+                                <ul>
+                                    <li><h3>Victoria's Secret</h3></li>
+                                    <li><h3>全场低至5折</h3></li>
+                                    <li class="img"><img src="image/index/prom_5.jpg"/></li>
+                                    <li class="last">Shop now ▶</li>
+                                </ul>
+                            </div>
+                            <div class="special">
+                                <a href="#">Shop now ▶</a>
+                                <img src="image/index/prom_6.jpg"/>
+                            </div>
+                        </div>
+                        <div class="pay">
+                            <ul>
+                                <li><a href="#"><img src="image/index/prom_icon_1.jpg"/></a></li>
+                                <li><a href="#"><img src="image/index/prom_icon_2.jpg"/></a></li>
+                                <li><a href="#"><img src="image/index/prom_icon_3.jpg"/></a></li>
+                                <li><a href="#"><img src="image/index/prom_icon_4.jpg"/></a></li>
+                                <li><a href="#"><img src="image/index/prom_icon_5.jpg"/></a></li>
+                                <li><a href="#"><img src="image/index/prom_icon_6.jpg"/></a></li>
+                            </ul>
+                            <img src="image/index/prom_8.jpg"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div><!--main end-->
+        <div id="footer">
+            <div class="top">
+                <div class="wrap">
+                    <div class="news">
+                        <h1>NEWS</h1>
+                        <p>订阅时尚资讯及最新优惠信息</p>
+                        <div class="order">
+                            <input class="txt" type="text">
+                            <input class="btn" type="button" value="订阅">
+                        </div>
+                    </div>
+                    <dl class="weibo">
+                        <dt><img src="image/index/weibo.jpg"></dt>
+                        <dd>官网微博</dd>
+                    </dl>
+                    <dl class="weixin">
+                        <dt><img src="image/index/weixin.jpg"></dt>
+                        <dd>官网微信</dd>
+                    </dl>
+                    <dl class="code">
+                        <dt><img src="image/index/code.jpg"></dt>
+                    </dl>
+                    <div class="tip">
+                        <img src="image/index/tip.jpg">
+                        <p>热线电话 : 400 660 5610</p>
+                        <p>工作时间 : 周一至周五（9:00-22:00）</p>
+                        <p class="last">周六日（09:00-18:00）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <dl class="fl">
+                    <dt class="dt1"></dt>
+                    <dd>品牌授权</dd>
+                </dl>
+                <dl>
+                    <dt class="dt2"></dt>
+                    <dd>正品保证</dd>
+                </dl>
+                <dl>
+                    <dt class="dt3"></dt>
+                    <dd>VIP服务</dd>
+                </dl>
+                <dl>
+                    <dt class="dt4"></dt>
+                    <dd>无理由退换货</dd>
+                </dl>
+                <ul class="ul1">
+                    <li>关于第五大道</li>
+                    <li>网站地图</li>
+                    <li>加入我们</li>
+                    <li>联系我们</li>
+                    <li>常见问题</li>
+                    <li>售后服务</li>
+                    <li>VIP会员制</li>
+                    <li>订购方式</li>
+                    <li>寻求合作</li>
+                    <li>招募品牌</li>
+                    <li>媒体聚焦</li>
+                    <li>奢尚志</li>
+                    <li class="last">甜橙理财礼品卡兑换引导卡</li>
+                </ul>
+                <ul class="ul2">
+                    <li>Copyright &copy; 2008-2014</li>
+                    <li>瑞美嘉信国际信息技术（北京）有限公司</li>
+                    <li>版权所有京ICP备09012701号-1</li>
+                    <li>京公网安备110105007400号</li>
+                </ul>
+                <div class="trade">
+                    <span class="span1">商务部认证诚信示范企业</span>
+                    <span class="span2">360网站安全检测平台</span>
+                </div>
+            </div>
+        </div>
     </div><!--container end-->
 </body>
 </html>
+<script src="JavaScript/commen.js"></script>
+<script src="JavaScript/index.js"></script>
