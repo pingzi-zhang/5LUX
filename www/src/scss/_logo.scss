@@ -3,6 +3,41 @@
     height: 92px;
     width: $wrapWidth;
     margin:0 auto;
-    background-color: red;
+    img,p{
+      float: left;
+    }
+    p{
+      @include set-height(54px);
+      text-indent: 7px;
+      border-left: 1px solid #aaaaaa;
+      font-size: 17px;
+      font-weight: bold;
+      display: block;
+      color: #949292;
+      margin-top: 18px;
+    }
+    span{
+      display: block;
+      float: right;
+      color: #414141;
+      text-indent: 24px;
+      margin-top: 72px;
+      background: url("../image/logo/logo_1.jpg") no-repeat;
+    }
+  }
+}
+#logmain{
+  height: 570px;
+  margin-bottom: 10px;
+  position: relative;
+  background:#ebe7e8 url("../image/logo/banner.jpg") repeat-x;
+  .enter{
+    width: 450px;
+    box-shadow: 0px 3px 3px 3px  #ece8e7;
+    height: 500px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 47px;
+    right: 153px;
   }
 }

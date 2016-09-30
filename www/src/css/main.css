@@ -1086,7 +1086,44 @@ h1 {
   height: 92px;
   width: 1006px;
   margin: 0 auto;
-  background-color: red;
+}
+#logheader .wrap img, #logheader .wrap p {
+  float: left;
+}
+#logheader .wrap p {
+  height: 54px;
+  line-height: 54px;
+  text-indent: 7px;
+  border-left: 1px solid #aaaaaa;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  color: #949292;
+  margin-top: 18px;
+}
+#logheader .wrap span {
+  display: block;
+  float: right;
+  color: #414141;
+  text-indent: 24px;
+  margin-top: 72px;
+  background: url("../image/logo/logo_1.jpg") no-repeat;
+}
+
+#logmain {
+  height: 570px;
+  margin-bottom: 10px;
+  position: relative;
+  background: #ebe7e8 url("../image/logo/banner.jpg") repeat-x;
+}
+#logmain .enter {
+  width: 450px;
+  box-shadow: 0px 3px 3px 3px  #ece8e7;
+  height: 500px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 47px;
+  right: 153px;
 }
 
 /*# sourceMappingURL=main.css.map */
