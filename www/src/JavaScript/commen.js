@@ -20,3 +20,12 @@ $(function(){
         }
     );
 });
+
+//创建随机数
+function getRandom(_min,_max){
+    return Math.random() * (_max - _min) + _min;
+}
+//获取随机颜色
+function getColor(){
+    return "rgb("+parseInt(getRandom(0,256))+","+parseInt(getRandom(0,256))+","+parseInt(getRandom(0,256))+")";
+}
