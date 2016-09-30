@@ -32,12 +32,86 @@
   position: relative;
   background:#ebe7e8 url("../image/logo/banner.jpg") repeat-x;
   .enter{
-    width: 450px;
+    width: 296px;
     box-shadow: 0px 3px 3px 3px  #ece8e7;
-    height: 500px;
+    height: 450px;
+    padding: 50px 77px 0 77px;
     background-color: #ffffff;
     position: absolute;
     top: 47px;
     right: 153px;
+  }
+}
+#logmain .enter{
+  .title{
+    height: 32px;
+    color: #6d6d6d;
+    border-bottom: 1px solid $formCol;
+  }
+  form{
+    width: 300px;
+    height: 336px;
+    input{
+      border: none;
+      margin-left: 26px;
+    }
+    .name,.psw{
+      margin-top: 32px;
+      width: 250px;
+      height: 33px;
+      border: 1px solid $formCol;
+      text-indent: 38px;
+      background: url("../image/logo/name.jpg") no-repeat 11px;
+    }
+    .psw{
+      background: url("../image/logo/psw.jpg") no-repeat 11px;
+      margin-bottom: 40px;
+    }
+    a{
+      @include link-colors($formtxtCol, #ddae5e,$formtxtCol);
+      display: inline-block;
+      float: right;
+      text-decoration: underline;
+      margin-right: 20px;
+    }
+    .btn{
+      margin-top: 26px;
+      width: 250px;
+      background-color: #cf0101;
+      color: #ffffff;
+      height: 33px;
+      margin-bottom: 25px;
+    }
+    span{
+      display: block;
+      float: right;
+      margin-left: 26px;
+      margin-right: 17px;
+    }
+  }
+  .bottom{
+    @extend .clearfix;
+    border-top: 1px solid $formCol;
+    padding-left: 24px;
+    p{
+      margin-top: 26px;
+      margin-bottom: 5px;
+    }
+    ul li a{
+      float: left;
+      margin: 6px 6px 0 0 ;
+      width: 82px;
+      height: 20px;
+      background: url("../image/logo/icon.jpg") no-repeat;
+      &.a2{
+        background-position: 0 -20px;
+      }
+      &.a3{
+        background-position: 0 -40px;
+      }
+      &.a4{
+        background-position: 0 -60px;
+      }
+    }
   }
 }

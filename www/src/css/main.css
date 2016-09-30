@@ -41,15 +41,15 @@ h1 {
   font-weight: normal;
 }
 
-.clearfix, #main, #main .classic, #main .topSales, #main .brand, #main .show, #main .show .list {
+.clearfix, #main, #main .classic, #main .topSales, #main .brand, #main .show, #main .show .list, #logmain .enter .bottom {
   *zoom: 1;
 }
-.clearfix:before, #main:before, #main .classic:before, #main .topSales:before, #main .brand:before, #main .show:before, #main .show .list:before, .clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after {
+.clearfix:before, #main:before, #main .classic:before, #main .topSales:before, #main .brand:before, #main .show:before, #main .show .list:before, #logmain .enter .bottom:before, .clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after, #logmain .enter .bottom:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after {
+.clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after, #logmain .enter .bottom:after {
   clear: both;
 }
 
@@ -1117,13 +1117,91 @@ h1 {
   background: #ebe7e8 url("../image/logo/banner.jpg") repeat-x;
 }
 #logmain .enter {
-  width: 450px;
+  width: 296px;
   box-shadow: 0px 3px 3px 3px  #ece8e7;
-  height: 500px;
+  height: 450px;
+  padding: 50px 77px 0 77px;
   background-color: #ffffff;
   position: absolute;
   top: 47px;
   right: 153px;
+}
+
+#logmain .enter .title {
+  height: 32px;
+  color: #6d6d6d;
+  border-bottom: 1px solid #cccccc;
+}
+#logmain .enter form {
+  width: 300px;
+  height: 336px;
+}
+#logmain .enter form input {
+  border: none;
+  margin-left: 26px;
+}
+#logmain .enter form .name, #logmain .enter form .psw {
+  margin-top: 32px;
+  width: 250px;
+  height: 33px;
+  border: 1px solid #cccccc;
+  text-indent: 38px;
+  background: url("../image/logo/name.jpg") no-repeat 11px;
+}
+#logmain .enter form .psw {
+  background: url("../image/logo/psw.jpg") no-repeat 11px;
+  margin-bottom: 40px;
+}
+#logmain .enter form a {
+  color: #a78668;
+  display: inline-block;
+  float: right;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+#logmain .enter form a:hover {
+  color: #ddae5e;
+}
+#logmain .enter form a:visited {
+  color: #a78668;
+}
+#logmain .enter form .btn {
+  margin-top: 26px;
+  width: 250px;
+  background-color: #cf0101;
+  color: #ffffff;
+  height: 33px;
+  margin-bottom: 25px;
+}
+#logmain .enter form span {
+  display: block;
+  float: right;
+  margin-left: 26px;
+  margin-right: 17px;
+}
+#logmain .enter .bottom {
+  border-top: 1px solid #cccccc;
+  padding-left: 24px;
+}
+#logmain .enter .bottom p {
+  margin-top: 26px;
+  margin-bottom: 5px;
+}
+#logmain .enter .bottom ul li a {
+  float: left;
+  margin: 6px 6px 0 0;
+  width: 82px;
+  height: 20px;
+  background: url("../image/logo/icon.jpg") no-repeat;
+}
+#logmain .enter .bottom ul li a.a2 {
+  background-position: 0 -20px;
+}
+#logmain .enter .bottom ul li a.a3 {
+  background-position: 0 -40px;
+}
+#logmain .enter .bottom ul li a.a4 {
+  background-position: 0 -60px;
 }
 
 /*# sourceMappingURL=main.css.map */
