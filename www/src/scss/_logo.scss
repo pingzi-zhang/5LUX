@@ -234,3 +234,216 @@
     }
   }
 }
+#carmain{
+  .wrap{
+    margin: 0 auto;
+    width: $wrapWidth;
+  }
+}
+#carmain .wrap{
+  color: #000000;
+  .step{
+    margin-bottom: 33px;
+    height: 47px;
+    background-color: #ebebeb;
+    float: right;
+    li{
+      @include set-height(44px);
+      background: url("../image/logo/cargt.jpg") no-repeat right;
+      float: left;
+      display: inline-block;
+      height: 44px;
+      padding: 0 50px 0 40px;
+      &.last{
+        background: none;
+        width: 150px;
+        padding: 0;
+        text-align: center;
+      }
+      &.active{
+        background: #727071 url("../image/logo/caractive.jpg") no-repeat right;
+      }
+    }
+  }
+}
+#carmain .wrap .orderMes{
+  clear: both;
+  .title{
+    @include set-height(79px);
+    background-color: #ebeaea;
+  }
+  .list{
+    @include set-height(100px);
+    background-color: green;
+    li.number{
+      input{
+        border:none;
+        border: 1px solid #9d9d9d;
+        background: none;
+        width: 50px;
+        &.btn{
+          @include textCenter(14px);
+          width: 14px;
+        }
+      }
+    }
+  }
+  .title,.list{
+    border-bottom: 1px solid #b3b3b3;
+    li{
+      float: left;
+      text-align: center;
+      &.all{
+        width: 46px;
+        background-color: red;
+      }
+      &.name{
+        width: 212px;
+        background-color: rebeccapurple;
+        p{
+          @include set-height(25px);
+        }
+      }
+      &.att,&.unitPrice,&.img,&.price,&.oper{
+        width: 95px;
+        background-color: #9aaee9;
+      }
+      &.oper{
+        a{
+          display: block;
+          @include set-height(40px);
+        }
+      }
+      &.number{
+        width: 152px;
+        background-color: blue;
+      }
+      &.activity{
+        width: 120px;
+        background-color: yellow;
+      }
+    }
+  }
+}
+#carmain .wrap .bottom{
+  padding-top: 36px;
+  input{
+    border: none;
+    background:none;
+    margin: 0 7px;
+  }
+  .clearCar{
+    display: inline-block;
+    float: left;
+    margin-left: 59px;
+    color: blue;
+  }
+  p{
+    float: right;
+    margin-right: 30px;
+    .totalprice{
+      color: $priceCol;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  div.pricebtn{
+    overflow: hidden;
+    clear: both;
+    padding-top: 35px;
+    padding-bottom: 28px;
+  }
+  .goshop,.pay{
+    @include textCenter(36px);
+    padding:0 40px;
+    color: #ffffff;
+    float: right;
+  }
+  .goshop{
+    background-color: #e66b2d;
+  }
+  .pay{
+    background-color: $priceCol;
+  }
+}
+#carmain .sale{
+  height: 292px;
+  padding-top: 16px;
+  background-color: #ececec;
+  .wrap{
+    width: $wrapWidth;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px #dfdfdf;
+  }
+}
+#carmain .sale{
+  h3{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -9px;
+    @include set-height(45px);
+    background: url("../image/logo/saleH.jpg") no-repeat;
+    text-indent: 126px;
+  }
+  dl{
+    width: 300px;
+    height: 165px;
+    margin: 30px 0 0 20px;
+    dt{
+      float: left;
+    }
+    dd{
+      @include set-height(30px);
+      float: left;
+      margin-left: 8px;
+      input{
+        border: none;
+        @include textCenter(36px);
+        padding:0 20px;
+        color: #ffffff;
+        background-color: #e66b2d;
+      }
+    }
+  }
+}
+#carmain .youlike{
+  height: 260px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  .wrap{
+    width: $wrapWidth;
+    height: 246px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 3px 3px #dfdfdf;
+  }
+}
+#carmain .youlike{
+  p{
+    @include set-height(35px);
+    color: #ffffff;
+    text-indent: 20px;
+    font-size: 14px;
+    background-color: #be0d13;
+  }
+  dl{
+    width: 144px;
+    height: 210px;
+    float: left;
+    margin: 15px 0 0 40px;
+    text-align: center;
+  }
+}
+#carmain .youlike dl{
+  dt{
+    height: 140px;
+    span{
+      @include  set-height(165px);
+    }
+  }
+  dd{
+    margin-top: 14px;
+  }
+}
+

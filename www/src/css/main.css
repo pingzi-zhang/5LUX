@@ -31,6 +31,10 @@ h4 {
   color: #363636;
 }
 
+h5 {
+  font-size: 16px;
+}
+
 sup {
   font-size: 5px;
 }
@@ -41,15 +45,15 @@ h1 {
   font-weight: normal;
 }
 
-.clearfix, #main, #main .classic, #main .topSales, #main .brand, #main .show, #main .show .list, #logmain .box .bottom, #regmain .box .bottom {
+.clearfix, #main, #main .classic, #main .topSales, #main .brand, #main .show, #main .show .list, #logmain .box .bottom, #regmain .box .bottom, #detailmain .detail {
   *zoom: 1;
 }
-.clearfix:before, #main:before, #main .classic:before, #main .topSales:before, #main .brand:before, #main .show:before, #main .show .list:before, #logmain .box .bottom:before, #regmain .box .bottom:before, .clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after, #logmain .box .bottom:after, #regmain .box .bottom:after {
+.clearfix:before, #main:before, #main .classic:before, #main .topSales:before, #main .brand:before, #main .show:before, #main .show .list:before, #logmain .box .bottom:before, #regmain .box .bottom:before, #detailmain .detail:before, .clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after, #logmain .box .bottom:after, #regmain .box .bottom:after, #detailmain .detail:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after, #logmain .box .bottom:after, #regmain .box .bottom:after {
+.clearfix:after, #main:after, #main .classic:after, #main .topSales:after, #main .brand:after, #main .show:after, #main .show .list:after, #logmain .box .bottom:after, #regmain .box .bottom:after, #detailmain .detail:after {
   clear: both;
 }
 
@@ -1327,10 +1331,601 @@ h1 {
   color: #ff0087;
 }
 
+#carmain .wrap {
+  margin: 0 auto;
+  width: 1006px;
+}
+
+#carmain .wrap {
+  color: #000000;
+}
+#carmain .wrap .step {
+  margin-bottom: 33px;
+  height: 47px;
+  background-color: #ebebeb;
+  float: right;
+}
+#carmain .wrap .step li {
+  height: 44px;
+  line-height: 44px;
+  background: url("../image/logo/cargt.jpg") no-repeat right;
+  float: left;
+  display: inline-block;
+  height: 44px;
+  padding: 0 50px 0 40px;
+}
+#carmain .wrap .step li.last {
+  background: none;
+  width: 150px;
+  padding: 0;
+  text-align: center;
+}
+#carmain .wrap .step li.active {
+  background: #727071 url("../image/logo/caractive.jpg") no-repeat right;
+}
+
+#carmain .wrap .orderMes {
+  clear: both;
+}
+#carmain .wrap .orderMes .title {
+  height: 79px;
+  line-height: 79px;
+  background-color: #ebeaea;
+}
+#carmain .wrap .orderMes .list {
+  height: 100px;
+  line-height: 100px;
+  background-color: green;
+}
+#carmain .wrap .orderMes .list li.number input {
+  border: none;
+  border: 1px solid #9d9d9d;
+  background: none;
+  width: 50px;
+}
+#carmain .wrap .orderMes .list li.number input.btn {
+  text-align: center;
+  height: 14px;
+  line-height: 14px;
+  width: 14px;
+}
+#carmain .wrap .orderMes .title, #carmain .wrap .orderMes .list {
+  border-bottom: 1px solid #b3b3b3;
+}
+#carmain .wrap .orderMes .title li, #carmain .wrap .orderMes .list li {
+  float: left;
+  text-align: center;
+}
+#carmain .wrap .orderMes .title li.all, #carmain .wrap .orderMes .list li.all {
+  width: 46px;
+  background-color: red;
+}
+#carmain .wrap .orderMes .title li.name, #carmain .wrap .orderMes .list li.name {
+  width: 212px;
+  background-color: rebeccapurple;
+}
+#carmain .wrap .orderMes .title li.name p, #carmain .wrap .orderMes .list li.name p {
+  height: 25px;
+  line-height: 25px;
+}
+#carmain .wrap .orderMes .title li.att, #carmain .wrap .orderMes .title li.unitPrice, #carmain .wrap .orderMes .title li.img, #carmain .wrap .orderMes .title li.price, #carmain .wrap .orderMes .title li.oper, #carmain .wrap .orderMes .list li.att, #carmain .wrap .orderMes .list li.unitPrice, #carmain .wrap .orderMes .list li.img, #carmain .wrap .orderMes .list li.price, #carmain .wrap .orderMes .list li.oper {
+  width: 95px;
+  background-color: #9aaee9;
+}
+#carmain .wrap .orderMes .title li.oper a, #carmain .wrap .orderMes .list li.oper a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+#carmain .wrap .orderMes .title li.number, #carmain .wrap .orderMes .list li.number {
+  width: 152px;
+  background-color: blue;
+}
+#carmain .wrap .orderMes .title li.activity, #carmain .wrap .orderMes .list li.activity {
+  width: 120px;
+  background-color: yellow;
+}
+
+#carmain .wrap .bottom {
+  padding-top: 36px;
+}
+#carmain .wrap .bottom input {
+  border: none;
+  background: none;
+  margin: 0 7px;
+}
+#carmain .wrap .bottom .clearCar {
+  display: inline-block;
+  float: left;
+  margin-left: 59px;
+  color: blue;
+}
+#carmain .wrap .bottom p {
+  float: right;
+  margin-right: 30px;
+}
+#carmain .wrap .bottom p .totalprice {
+  color: #df3338;
+  font-size: 16px;
+  font-weight: bold;
+}
+#carmain .wrap .bottom div.pricebtn {
+  overflow: hidden;
+  clear: both;
+  padding-top: 35px;
+  padding-bottom: 28px;
+}
+#carmain .wrap .bottom .goshop, #carmain .wrap .bottom .pay {
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 40px;
+  color: #ffffff;
+  float: right;
+}
+#carmain .wrap .bottom .goshop {
+  background-color: #e66b2d;
+}
+#carmain .wrap .bottom .pay {
+  background-color: #df3338;
+}
+
+#carmain .sale {
+  height: 292px;
+  padding-top: 16px;
+  background-color: #ececec;
+}
+#carmain .sale .wrap {
+  width: 1006px;
+  height: 280px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 3px #dfdfdf;
+}
+
+#carmain .sale h3 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: -9px;
+  height: 45px;
+  line-height: 45px;
+  background: url("../image/logo/saleH.jpg") no-repeat;
+  text-indent: 126px;
+}
+#carmain .sale dl {
+  width: 300px;
+  height: 165px;
+  margin: 30px 0 0 20px;
+}
+#carmain .sale dl dt {
+  float: left;
+}
+#carmain .sale dl dd {
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-left: 8px;
+}
+#carmain .sale dl dd input {
+  border: none;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  color: #ffffff;
+  background-color: #e66b2d;
+}
+
+#carmain .youlike {
+  height: 260px;
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+#carmain .youlike .wrap {
+  width: 1006px;
+  height: 246px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 3px 3px #dfdfdf;
+}
+
+#carmain .youlike p {
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  text-indent: 20px;
+  font-size: 14px;
+  background-color: #be0d13;
+}
+#carmain .youlike dl {
+  width: 144px;
+  height: 210px;
+  float: left;
+  margin: 15px 0 0 40px;
+  text-align: center;
+}
+
+#carmain .youlike dl dt {
+  height: 140px;
+}
+#carmain .youlike dl dt span {
+  height: 165px;
+  line-height: 165px;
+}
+#carmain .youlike dl dd {
+  margin-top: 14px;
+}
+
+#detailmain {
+  margin-bottom: 100px;
+}
 #detailmain .wrap {
   width: 1006px;
-  background-color: red;
   margin: 0 auto;
+}
+
+#detailmain .pro {
+  height: 615px;
+}
+#detailmain .pro .left {
+  margin-top: 30px;
+  float: left;
+  width: 435px;
+}
+#detailmain .pro .right {
+  float: right;
+  margin-top: 38px;
+  width: 530px;
+}
+
+#detailmain .pro .left .imgbox {
+  width: 430px;
+  height: 435px;
+  box-shadow: 0px 3px 3px 3px #e1e1e1;
+}
+#detailmain .pro .left .list {
+  margin-top: 34px;
+  height: 68px;
+}
+#detailmain .pro .left .list button {
+  float: left;
+  width: 22px;
+  height: 68px;
+}
+#detailmain .pro .left .list button.prev {
+  float: left;
+  background: url("../image/detail/prev.jpg") no-repeat;
+}
+#detailmain .pro .left .list button.next {
+  float: left;
+  background: url("../image/detail/next.jpg") no-repeat;
+}
+
+#detailmain .pro .left .list ul {
+  float: left;
+  height: 68px;
+  margin: 0 25px 0 15px;
+  width: 348px;
+  background-color: yellow;
+  overflow: hidden;
+}
+#detailmain .pro .left .list ul li {
+  float: left;
+  height: 65px;
+  width: 65px;
+  border: 1px solid #cccccc;
+  margin-left: 13px;
+}
+
+#detailmain .right a, #detailmain .right h5, #detailmain .right h4 {
+  color: #757272;
+}
+#detailmain .right li {
+  height: 26px;
+  line-height: 26px;
+}
+#detailmain .right .title {
+  border-bottom: 1px dashed #353637;
+}
+
+#detailmain .right .payprice li {
+  height: 24px;
+  line-height: 24px;
+}
+#detailmain .right .payprice li.first {
+  height: 45px;
+  line-height: 45px;
+}
+#detailmain .right .payprice li.first span {
+  color: #d00000;
+  font-weight: bold;
+}
+#detailmain .right .payprice li.first span.price {
+  font-size: 16px;
+}
+#detailmain .right .payprice li.yipay {
+  color: #d00000;
+  height: 65px;
+}
+#detailmain .right .payprice li.yipay p {
+  height: 24px;
+  line-height: 24px;
+}
+
+#detailmain .right .mes li .tip {
+  color: #ddae5e;
+}
+#detailmain .right .mes .color input {
+  border: none;
+  background: none;
+  width: 40px;
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #d00000;
+  margin-left: 30px;
+}
+#detailmain .right .mes .num {
+  margin-top: 15px;
+}
+#detailmain .right .mes .num input {
+  text-align: center;
+  height: 14px;
+  line-height: 14px;
+  background: none;
+  border: 1px solid #abadb3;
+  width: 14px;
+}
+#detailmain .right .mes .num input.txt {
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  width: 54px;
+  margin: 0 5px;
+}
+#detailmain .right .mes .num span {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#detailmain .right .pay {
+  overflow: hidden;
+  border-bottom: 1px dashed #353637;
+}
+#detailmain .right .pay li {
+  float: left;
+  background-color: #d00000;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  width: 150px;
+  color: #ffffff;
+  margin: 10px 10px 20px 0;
+}
+#detailmain .right .pay li.shopcar {
+  background-color: #e66b2d;
+}
+#detailmain .right .pay li.coll {
+  width: 75px;
+  margin-top: 18px;
+  text-align: center;
+  height: 21px;
+  line-height: 21px;
+  background-color: #e66b2d;
+}
+
+#detailmain .right .serve {
+  height: 77px;
+  line-height: 77px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+#detailmain .right .serve li {
+  float: left;
+}
+#detailmain .right .serve li dl {
+  height: 67px;
+  width: 86px;
+  text-align: center;
+}
+#detailmain .right .serve li dl dt {
+  margin: 0 auto;
+  width: 45px;
+  height: 35px;
+  background: url("../image/detail/serv_icon.jpg") no-repeat;
+}
+#detailmain .right .serve li dl dt.dt2 {
+  background-position-y: -35px;
+}
+#detailmain .right .serve li dl dt.dt3 {
+  background-position-y: -70px;
+}
+#detailmain .right .serve li dl dt.dt4 {
+  background-position-y: -105px;
+}
+#detailmain .right .serve li dl dt.dt5 {
+  background-position-y: -140px;
+}
+#detailmain .right .serve li dl dd {
+  height: 30px;
+  line-height: 30px;
+}
+
+#detailmain .detail .left {
+  width: 800px;
+  float: left;
+}
+#detailmain .detail .right {
+  width: 172px;
+  float: right;
+}
+
+#detailmain .detail .left .select li {
+  float: left;
+  color: #000000;
+}
+#detailmain .detail .left .select a {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #ffffff;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  color: #000000;
+  border: 1px solid #666666;
+  width: 264px;
+}
+#detailmain .detail .left .box {
+  padding-top: 30px;
+}
+
+#detailmain .detail .right {
+  height: 500px;
+}
+#detailmain .detail .right .img2 {
+  margin-top: 10px;
+}
+#detailmain .detail .right .box {
+  overflow: hidden;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  border: 1px solid #999999;
+}
+#detailmain .detail .right .box p {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  background-color: #d00000;
+  width: 170px;
+}
+#detailmain .detail .right .box dl {
+  overflow: hidden;
+  text-align: center;
+}
+#detailmain .detail .right .box dl dt {
+  height: 135px;
+}
+#detailmain .detail .right .box dl dt span {
+  display: inline-block;
+  height: 135px;
+  line-height: 135px;
+}
+#detailmain .detail .right .box dl dd {
+  height: 20px;
+  line-height: 20px;
+}
+
+#lsitmain .wrap {
+  color: #666666;
+  width: 1210px;
+  margin: 0 auto;
+}
+#lsitmain .title {
+  height: 93px;
+}
+#lsitmain .title p {
+  height: 49px;
+  line-height: 49px;
+  text-indent: 5px;
+  background-color: #f2f2f2;
+}
+#lsitmain .title p span {
+  color: #d00000;
+}
+
+#lsitmain .title {
+  margin: 12px 0 12px 0;
+}
+#lsitmain .title ul {
+  height: 47px;
+  line-height: 47px;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+}
+#lsitmain .title ul li {
+  float: left;
+  padding-left: 19px;
+}
+
+#lsitmain .list {
+  overflow: hidden;
+  border-top: 3px solid #dfdfdf;
+}
+#lsitmain .list .filter {
+  margin-top: 10px;
+  height: 36px;
+  background-color: #f2f2f2;
+  padding-left: 9px;
+}
+#lsitmain .list .filter li {
+  float: left;
+}
+#lsitmain .list .filter li a {
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 9px;
+  display: inline-block;
+  color: #666666;
+  width: 60px;
+  border: 1px solid #c9c9c9;
+  border-right: none;
+}
+#lsitmain .list .filter li a.last {
+  border-right: 1px solid #c9c9c9;
+}
+
+#lsitmain .list dl {
+  height: 492px;
+  width: 264px;
+  float: left;
+  margin-left: 37px;
+  text-align: center;
+}
+#lsitmain .list dl dt {
+  height: 290px;
+  margin-bottom: 40px;
+}
+#lsitmain .list dl dt span {
+  display: inline-block;
+  height: 290px;
+  line-height: 290px;
+}
+#lsitmain .list dl dd {
+  line-height: 27px;
+}
+#lsitmain .list dl dd.price {
+  color: #ddae5e;
+}
+#lsitmain .list dl dd.price del {
+  color: #999999;
+}
+
+#lsitmain .page {
+  height: 32px;
+  margin: 50px 0 30px 0;
+  text-align: center;
+}
+#lsitmain .page ul {
+  display: inline-block;
+}
+#lsitmain .page ul li {
+  float: left;
+  overflow: hidden;
+}
+#lsitmain .page ul li button {
+  background: none;
+  height: 30px;
+  line-height: 30px;
+  width: 35px;
+  border: 1px solid #c69c6d;
+  margin-left: 8px;
+}
+#lsitmain .page ul li button.special {
+  width: 54px;
+}
+#lsitmain .page ul li button.active {
+  background-color: #c69c6d;
 }
 
 /*# sourceMappingURL=main.css.map */

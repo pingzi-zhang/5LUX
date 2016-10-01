@@ -1,7 +1,250 @@
 #detailmain{
   .wrap{
     width: $wrapWidth;
-    background-color: red;
     margin:0 auto;
+  }
+  margin-bottom: 100px;
+}
+#detailmain{
+  .pro{
+    height: 615px;
+    .left{
+      margin-top: 30px;
+      float: left;
+      width: 435px;
+    }
+    .right{
+      float: right;
+      margin-top: 38px;
+      width: 530px;
+    }
+  }
+}
+#detailmain .pro .left{
+  .imgbox{
+    width: 430px;
+    height: 435px;
+    box-shadow: 0px 3px 3px 3px #e1e1e1;
+  }
+  .list{
+    margin-top: 34px;
+    height: 68px;
+    button{
+      float: left;
+      width: 22px;
+      height: 68px;
+      &.prev{
+        float: left;
+        background: url("../image/detail/prev.jpg") no-repeat;
+      }
+      &.next{
+        float: left;
+        background: url("../image/detail/next.jpg") no-repeat;
+      }
+    }
+  }
+}
+#detailmain .pro .left .list{
+  ul{
+    float: left;
+    height: 68px;
+    margin: 0 25px 0 15px;
+    width: 348px;
+    background-color: yellow;
+    overflow: hidden;
+    li{
+      float: left;
+      height: 65px;
+      width: 65px;
+      border: 1px solid #cccccc;
+      margin-left: 13px;
+    }
+  }
+}
+
+#detailmain .right{
+  a,h5,h4{
+    color: #757272;
+  }
+  li{
+    @include set-height(26px);
+  }
+  .title{
+    border-bottom: 1px dashed #353637;
+  }
+}
+#detailmain .right .payprice{
+  li{
+    @include set-height(24px);
+    &.first{
+      @include set-height(45px);
+      span{
+        color: #d00000;
+        font-weight: bold;
+        &.price{
+          font-size: 16px;
+        }
+      }
+    }
+    &.yipay{
+      color: #d00000;
+      height: 65px;
+      p{
+        @include set-height(24px);
+      }
+    }
+  }
+}
+#detailmain .right .mes{
+  li{
+    .tip{
+      color: $specialTxtCol;
+    }
+  }
+  .color{
+    input{
+      border: none;
+      background:none;
+      width: 40px;
+      @include textCenter(26px);
+      border: 1px solid $maincolor;
+      margin-left: 30px;
+    }
+  }
+  .num{
+    margin-top: 15px;
+    input{
+      @include textCenter(14px);
+      background: none;
+      border: 1px solid #abadb3;
+      width: 14px;
+      &.txt{
+        @include textCenter(20px);
+        width: 54px;
+        margin: 0 5px;
+      }
+    }
+    span{
+      display: inline-block;
+      margin-right: 30px;
+    }
+  }
+}
+#detailmain .right .pay{
+  overflow: hidden;
+  border-bottom: 1px dashed #353637;
+  li {
+    float: left;
+    background-color: $maincolor;
+    @include textCenter(35px);
+    width: 150px;
+    color: #ffffff;
+    margin: 10px 10px 20px 0;
+    &.shopcar{
+      background-color: #e66b2d;
+    }
+    &.coll{
+      width: 75px;
+      margin-top: 18px;
+      @include textCenter(21px);
+      background-color: #e66b2d;
+    }
+  }
+}
+#detailmain .right .serve{
+  @include set-height(77px);
+  margin-top: 12px;
+  overflow: hidden;
+  li{
+    float: left;
+    dl{
+      height: 67px;
+      width: 86px;
+      text-align: center;
+      dt{
+        margin: 0 auto;
+        width: 45px;
+        height: 35px;
+        background:url("../image/detail/serv_icon.jpg") no-repeat;
+        &.dt2{
+          background-position-y: -35px;
+        }
+        &.dt3{
+          background-position-y: -70px;
+        }
+        &.dt4{
+          background-position-y: -105px;
+        }
+        &.dt5{
+          background-position-y: -140px;
+        }
+      }
+      dd{
+        @include set-height(30px);
+      }
+    }
+  }
+}
+#detailmain .detail{
+  @extend .clearfix;
+  .left{
+    width: 800px;
+    float: left;
+  }
+  .right{
+    width: 172px;
+    float: right;
+  }
+}
+#detailmain .detail .left{
+  .select{
+    li{
+      float: left;
+      color: #000000;
+    }
+    a{
+      display: inline-block;
+      font-weight: bold;
+      background-color: #ffffff;
+      @include textCenter(25px);
+      color: #000000;
+      border: 1px solid #666666;
+      width: 264px;
+    }
+  }
+  .box{
+    padding-top: 30px;
+  }
+}
+#detailmain .detail .right{
+  height: 500px;
+    .img2{
+      margin-top: 10px;
+    }
+  .box{
+    overflow: hidden;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border: 1px solid #999999;
+    p{
+      @include textCenter(40px);
+      color: #ffffff;
+      background-color: $maincolor;
+      width: 170px;
+    }
+    dl{
+      overflow: hidden;
+      text-align: center;
+      dt{
+        height: 135px;
+        span{
+          display: inline-block;
+          @include set-height(135px);
+        }
+      }
+      dd{
+        @include set-height(20px);
+      }
+    }
   }
 }

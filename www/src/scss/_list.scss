@@ -1,0 +1,105 @@
+#lsitmain{
+  .wrap{
+    color: #666666;
+    width: 1210px;
+    margin: 0 auto;
+  }
+  .title{
+    height: 93px;
+    p{
+      @include set-height(49px);
+      text-indent: 5px;
+      background-color: #f2f2f2;
+      span{
+        color: $maincolor;
+      }
+    }
+  }
+}
+#lsitmain .title{
+  margin: 12px 0 12px 0;
+  ul{
+    @include set-height(47px);
+    border: 1px solid #dfdfdf;
+    border-top: none;
+    li{
+      float: left;
+      padding-left: 19px;
+    }
+  }
+}
+#lsitmain .list{
+  overflow: hidden;
+  border-top: 3px solid #dfdfdf;
+  .filter{
+    margin-top: 10px;
+    height: 36px;
+    background-color: #f2f2f2;
+    padding-left: 9px;
+    li{
+      float: left;
+      a{
+        @include textCenter(25px);
+        margin-top: 9px;
+        display:inline-block;
+        color: #666666;
+        width: 60px;
+        border: 1px solid #c9c9c9;
+        border-right: none;
+        &.last{
+          border-right: 1px solid #c9c9c9;
+        }
+      }
+    }
+  }
+}
+#lsitmain .list dl{
+  height: 492px;
+  width: 264px;
+  float: left;
+  margin-left: 37px;
+  text-align: center;
+  dt{
+    height: 290px;
+    margin-bottom: 40px;
+    span{
+      display: inline-block;
+      height: 290px;
+      line-height: 290px;
+    }
+  }
+  dd{
+    line-height: 27px;
+    &.price{
+      color:$specialTxtCol;
+      del{
+        color: #999999;
+      }
+    }
+  }
+}
+#lsitmain .page{
+  height:32px;
+  margin: 50px 0 30px 0;
+  text-align: center;
+  ul{
+    display: inline-block;
+    li{
+      float: left;
+      overflow: hidden;
+      button{
+        background:none;
+        @include set-height(30px);
+        width: 35px;
+        border: 1px solid #c69c6d;
+        margin-left: 8px;
+        &.special{
+          width: 54px;
+        }
+        &.active{
+          background-color: #c69c6d;
+        }
+      }
+    }
+  }
+}

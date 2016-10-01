@@ -136,19 +136,7 @@
             d.setDate(d.getDate() + num);
             return d;
         }
-        //加载时显示记住的用户名
-        $("#logmain form .name").val($.cookie.getAll("username").name);
-        $("#logmain form .psw").val($.cookie.getAll("username").psw);
-        //记住用户名
-        $("#logmain .btn").click(function(){
-            if(($("#logmain .check")[0].checked) == true){
-                var name = $("#logmain .name").val();
-                var psw = $("#logmain .psw").val();
-                $.cookie.setAll("username",{"name":name,"psw":psw},_getDate(7));
-            }
-            alert("登录成功");
-            window.open("../index.html","_self");
-        });
+
         //登录按钮
         $("#logmain form .btn").click(function(){
             var namevalue = $("#logmain form .name").val();
