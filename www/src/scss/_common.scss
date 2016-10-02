@@ -127,7 +127,7 @@
         height: 30px;
         border: 1px solid $searchCol;
         float: right;
-        .txt{
+        #autocomplete{
           border: none;
           @include set-height(30px);
           float: left;

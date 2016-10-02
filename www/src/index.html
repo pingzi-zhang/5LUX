@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link href="lib/jquery-ui.css" rel="stylesheet">
     <script src="lib/jquery-1.8.3.js"></script>
 </head>
 <body>
@@ -40,7 +41,8 @@
                <div class="wrap">
                    <img src="image/logo.jpg"/>
                    <div class="search">
-                       <input class="txt" type="text" value="爱马仕铂金包">
+                       <!--<input class="txt" type="text" value="爱马仕铂金包">-->
+                       <input id="autocomplete" title="type &quot;a&quot;" placeholder="爱马仕铂金包">
                        <input class="btn" type="button">
                    </div>
                </div>
@@ -616,3 +618,36 @@
 </html>
 <script src="JavaScript/commen.js"></script>
 <script src="JavaScript/index.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/jquery-ui.js"></script>
+<!--搜索框的功能-->
+<script>
+    var availableTags = [
+        "搜索 爱彼",
+        "搜索 爱彼女表",
+        '找 "爱马仕"相关实体店',
+        "搜索 爱马仕丝巾",
+        "搜索 爱马仕围巾",
+        "搜索 爱马仕香水",
+        "搜索 alma",
+        '找 "阿尼玛"相关实体店',
+        '找 "Sophie & stephie(S&S)"相关实体店',
+        '搜索 "塞琳"',
+        "搜索 saint laurent",
+        "搜索 萨奇",
+        "搜索 圣罗兰",
+        '找 "亚历山大麦昆"相关实体店',
+        "搜索 眼镜",
+        "搜索 YSL",
+        "搜索 钥匙",
+        "搜索 钥匙扣",
+        "搜索 运动",
+        "搜索 羽绒服",
+        "搜索 雨伞",
+        "搜索 Y-3"
+    ];
+
+    $( "#autocomplete" ).autocomplete({
+        source: availableTags
+    });
+</script>

@@ -12,6 +12,7 @@
       margin-top: 30px;
       float: left;
       width: 435px;
+      position: relative;
     }
     .right{
       float: right;
@@ -21,10 +22,44 @@
   }
 }
 #detailmain .pro .left{
-  .imgbox{
+  .bigimg{
+    position: absolute;
+    display: none;
     width: 430px;
     height: 435px;
     box-shadow: 0px 3px 3px 3px #e1e1e1;
+    border: 1px solid #666666;
+    left: 440px;
+    overflow: hidden;
+    top: 0;
+    img{
+      position: absolute;
+      width: 924px;
+      height:946px;
+      left: 0;
+      top:0;
+    }
+  }
+  .imgbox{
+    width: 430px;
+    height: 435px;
+    position: relative;
+    box-shadow: 0px 3px 3px 3px #e1e1e1;
+    img{
+      width: 430px;
+      height: 435px;
+    }
+    span{
+      display: none;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background-color: #918f8f;
+      opacity: 0.7;
+    }
   }
   .list{
     margin-top: 34px;
@@ -45,19 +80,26 @@
   }
 }
 #detailmain .pro .left .list{
-  ul{
-    float: left;
+  .ulbox{
+    margin: 0 25px;
+    width: 340px;
     height: 68px;
-    margin: 0 25px 0 15px;
-    width: 348px;
+    float: left;
+    position:relative;
     overflow: hidden;
+  }
+  ul{
+    height: 68px;
+    position: absolute;
+    width: 400px;
+    left: 0;
     li{
+      text-align: center;
       float: left;
       height: 65px;
-      width: 65px;
-      border: 1px solid #cccccc;
-      margin-left: 13px;
+      width: 80px;
       img{
+        border: 1px solid #cccccc;
         height: 65px;
         width: 65px;
       }

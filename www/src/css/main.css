@@ -198,7 +198,7 @@ h1 {
   border: 1px solid #020202;
   float: right;
 }
-#header .logo .wrap .search .txt {
+#header .logo .wrap .search #autocomplete {
   border: none;
   height: 30px;
   line-height: 30px;
@@ -1570,6 +1570,7 @@ h1 {
   margin-top: 30px;
   float: left;
   width: 435px;
+  position: relative;
 }
 #detailmain .pro .right {
   float: right;
@@ -1577,10 +1578,44 @@ h1 {
   width: 530px;
 }
 
-#detailmain .pro .left .imgbox {
+#detailmain .pro .left .bigimg {
+  position: absolute;
+  display: none;
   width: 430px;
   height: 435px;
   box-shadow: 0px 3px 3px 3px #e1e1e1;
+  border: 1px solid #666666;
+  left: 440px;
+  overflow: hidden;
+  top: 0;
+}
+#detailmain .pro .left .bigimg img {
+  position: absolute;
+  width: 924px;
+  height: 946px;
+  left: 0;
+  top: 0;
+}
+#detailmain .pro .left .imgbox {
+  width: 430px;
+  height: 435px;
+  position: relative;
+  box-shadow: 0px 3px 3px 3px #e1e1e1;
+}
+#detailmain .pro .left .imgbox img {
+  width: 430px;
+  height: 435px;
+}
+#detailmain .pro .left .imgbox span {
+  display: none;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #918f8f;
+  opacity: 0.7;
 }
 #detailmain .pro .left .list {
   margin-top: 34px;
@@ -1600,21 +1635,28 @@ h1 {
   background: url("../image/detail/next.jpg") no-repeat;
 }
 
-#detailmain .pro .left .list ul {
-  float: left;
+#detailmain .pro .left .list .ulbox {
+  margin: 0 25px;
+  width: 340px;
   height: 68px;
-  margin: 0 25px 0 15px;
-  width: 348px;
+  float: left;
+  position: relative;
   overflow: hidden;
 }
+#detailmain .pro .left .list ul {
+  height: 68px;
+  position: absolute;
+  width: 400px;
+  left: 0;
+}
 #detailmain .pro .left .list ul li {
+  text-align: center;
   float: left;
   height: 65px;
-  width: 65px;
-  border: 1px solid #cccccc;
-  margin-left: 13px;
+  width: 80px;
 }
 #detailmain .pro .left .list ul li img {
+  border: 1px solid #cccccc;
   height: 65px;
   width: 65px;
 }
