@@ -78,12 +78,6 @@ $(function(){
         istwoPsw();
     });
 
-   if($(".email .check").click(function(){
-        if(isEmail() && isPsw() && istwoPsw()){
-            $(".email .btn").removeClass("disable");
-        }
-    }));
-
     //存入Cookie
     function _getDate(num){
         var d = new Date();
@@ -92,7 +86,7 @@ $(function(){
     }
 
     $(".email .btn").click(function(){
-       var username = $(".email .acount").val();
+        var username = $(".email .acount").val();
         //当存入@cookie时会出现乱码
         username = username.substring(0,username.search("@"));
         if($.cookie.getAll(username).psw != null){
@@ -102,4 +96,12 @@ $(function(){
             window.open("../index.html","_self");
         }
     });
+
+
+    if($(".email .check").click(function(){
+        if(isEmail() && isPsw() && istwoPsw()){
+            $(".email .btn").removeClass("disable");
+        }
+    }));
+
 });

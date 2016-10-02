@@ -1,4 +1,4 @@
-#lsitmain{
+#listmain{
   .wrap{
     color: #666666;
     width: 1210px;
@@ -16,7 +16,7 @@
     }
   }
 }
-#lsitmain .title{
+#listmain .title{
   margin: 12px 0 12px 0;
   ul{
     @include set-height(47px);
@@ -28,7 +28,7 @@
     }
   }
 }
-#lsitmain .list{
+#listmain .list{
   overflow: hidden;
   border-top: 3px solid #dfdfdf;
   .filter{
@@ -53,7 +53,7 @@
     }
   }
 }
-#lsitmain .list dl{
+#listmain .list dl{
   height: 492px;
   width: 264px;
   float: left;
@@ -67,6 +67,10 @@
       height: 290px;
       line-height: 290px;
     }
+    img{
+      width: 260px;
+      height: 260px;
+    }
   }
   dd{
     line-height: 27px;
@@ -78,7 +82,7 @@
     }
   }
 }
-#lsitmain .page{
+#listmain .page{
   height:32px;
   margin: 50px 0 30px 0;
   text-align: center;

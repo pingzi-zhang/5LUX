@@ -1605,7 +1605,6 @@ h1 {
   height: 68px;
   margin: 0 25px 0 15px;
   width: 348px;
-  background-color: yellow;
   overflow: hidden;
 }
 #detailmain .pro .left .list ul li {
@@ -1614,6 +1613,10 @@ h1 {
   width: 65px;
   border: 1px solid #cccccc;
   margin-left: 13px;
+}
+#detailmain .pro .left .list ul li img {
+  height: 65px;
+  width: 65px;
 }
 
 #detailmain .right a, #detailmain .right h5, #detailmain .right h4 {
@@ -1815,52 +1818,52 @@ h1 {
   line-height: 20px;
 }
 
-#lsitmain .wrap {
+#listmain .wrap {
   color: #666666;
   width: 1210px;
   margin: 0 auto;
 }
-#lsitmain .title {
+#listmain .title {
   height: 93px;
 }
-#lsitmain .title p {
+#listmain .title p {
   height: 49px;
   line-height: 49px;
   text-indent: 5px;
   background-color: #f2f2f2;
 }
-#lsitmain .title p span {
+#listmain .title p span {
   color: #d00000;
 }
 
-#lsitmain .title {
+#listmain .title {
   margin: 12px 0 12px 0;
 }
-#lsitmain .title ul {
+#listmain .title ul {
   height: 47px;
   line-height: 47px;
   border: 1px solid #dfdfdf;
   border-top: none;
 }
-#lsitmain .title ul li {
+#listmain .title ul li {
   float: left;
   padding-left: 19px;
 }
 
-#lsitmain .list {
+#listmain .list {
   overflow: hidden;
   border-top: 3px solid #dfdfdf;
 }
-#lsitmain .list .filter {
+#listmain .list .filter {
   margin-top: 10px;
   height: 36px;
   background-color: #f2f2f2;
   padding-left: 9px;
 }
-#lsitmain .list .filter li {
+#listmain .list .filter li {
   float: left;
 }
-#lsitmain .list .filter li a {
+#listmain .list .filter li a {
   text-align: center;
   height: 25px;
   line-height: 25px;
@@ -1871,49 +1874,53 @@ h1 {
   border: 1px solid #c9c9c9;
   border-right: none;
 }
-#lsitmain .list .filter li a.last {
+#listmain .list .filter li a.last {
   border-right: 1px solid #c9c9c9;
 }
 
-#lsitmain .list dl {
+#listmain .list dl {
   height: 492px;
   width: 264px;
   float: left;
   margin-left: 37px;
   text-align: center;
 }
-#lsitmain .list dl dt {
+#listmain .list dl dt {
   height: 290px;
   margin-bottom: 40px;
 }
-#lsitmain .list dl dt span {
+#listmain .list dl dt span {
   display: inline-block;
   height: 290px;
   line-height: 290px;
 }
-#lsitmain .list dl dd {
+#listmain .list dl dt img {
+  width: 260px;
+  height: 260px;
+}
+#listmain .list dl dd {
   line-height: 27px;
 }
-#lsitmain .list dl dd.price {
+#listmain .list dl dd.price {
   color: #ddae5e;
 }
-#lsitmain .list dl dd.price del {
+#listmain .list dl dd.price del {
   color: #999999;
 }
 
-#lsitmain .page {
+#listmain .page {
   height: 32px;
   margin: 50px 0 30px 0;
   text-align: center;
 }
-#lsitmain .page ul {
+#listmain .page ul {
   display: inline-block;
 }
-#lsitmain .page ul li {
+#listmain .page ul li {
   float: left;
   overflow: hidden;
 }
-#lsitmain .page ul li button {
+#listmain .page ul li button {
   background: none;
   height: 30px;
   line-height: 30px;
@@ -1921,10 +1928,10 @@ h1 {
   border: 1px solid #c69c6d;
   margin-left: 8px;
 }
-#lsitmain .page ul li button.special {
+#listmain .page ul li button.special {
   width: 54px;
 }
-#lsitmain .page ul li button.active {
+#listmain .page ul li button.active {
   background-color: #c69c6d;
 }
 
