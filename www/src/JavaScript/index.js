@@ -91,12 +91,53 @@ $(function(){
     },function(){
         $(" .prev,.next").stop().fadeOut(500);
     });
-
-    //下级菜单menu
-    $("#menu .wrap .first").bind("mouseover",function(){
-        $(this).parents("#menu").children(".downlist").show();
+    //回到顶部
+    $("#sidebar .ul2 li:last-child").click(function(event){
+       $(document).scrollTop(0);
     });
-    $("#menu .wrap .first").bind("mouseout",function(){
-        $(this).parents("#menu").children(".downlist").hide();
+    //存放当前的json对象
+    $.getJSON("JavaScript/package.json",function(data){
+        $("#menu .downlist li").on("mouseenter",function(){
+            var currentobj;
+            var livalue = $(this).find("a").html();
+            //设置#twomenu的高度
+            console.log($(this).parent().offset().top);
+            $("#menu .twomenu").offset({"top":$(this).parent().offset().top+ ($(this).index()*35)/2});
+           $.each(data,function(index,obj){
+               if(obj.type == livalue){
+                   currentobj = obj;
+               }
+           });
+            $("#menu .twomenu").html("");
+            $.each(currentobj.list,function(index,obj){
+                //创建一个ul
+                var newul = document.createElement("ul");
+                $("#menu .twomenu").append(newul);
+                var li = document.createElement("li");
+                var h4 = document.createElement("h4");
+                $(h4).html(obj.title);
+                $(li).append($(h4));
+                $(newul).append(li);
+                $.each(obj.item,function(index,obj){
+                    var li = document.createElement("li");
+                    $(li).html(obj);
+                    $(newul).append(li);
+                })
+            });
+            var btn ="<li><button>进入所有品牌</button></li>";
+            $("#menu .twomenu").append(btn);
+        });
+    });
+    $("#menu .wrap ul:first-child").bind("mouseenter",function(){
+        $("#menu .downlist").stop().show();
+    });
+    $("#menu .wrap ul:first-child").bind("mouseleave",function(){
+        $("#menu .downlist").stop().hide();
+    });
+    $("#menu .wrap .downlist").bind("mouseenter",function(){
+        $("#menu .twomenu").stop().show();
+    });
+    $("#menu .wrap .downlist").bind("mouseleave",function(){
+        $("#menu .twomenu").stop().hide();
     });
 });

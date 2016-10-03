@@ -1,0 +1,238 @@
+[
+  {"type":"推荐品牌",
+   "list":[
+          {"title":"高端品牌",
+            "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+            "Mont blanc","Armani","Calvin Klein CK"]
+          },
+         {"title":"热销品牌",
+           "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+             "Dior","Aviendo"]
+         },
+         {"title":"最新品牌",
+           "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+           ]
+         }
+   ]
+  },
+  {"type":"箱包",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"美妆",
+    "list":[
+      {"title":"护肤",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"彩妆",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"香水",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      },
+      {"title":"美体",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"套装精品",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"旅行套装",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      },
+      {"title":"美妆工具",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      },
+      {"title":"全身护理",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      }
+    ]
+  },
+  {"type":"服装",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"腕表",
+    "list":[
+      {"title":"高端品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"热销品牌",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"最新品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      }
+    ]
+  },
+  {"type":"配饰",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"鞋靴",
+    "list":[
+      {"title":"高端品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"热销品牌",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"最新品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      }
+    ]
+  },
+  {"type":"母婴",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"美酒",
+    "list":[
+      {"title":"高端品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"热销品牌",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"最新品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      }
+    ]
+  },
+  {"type":"美食",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"家居",
+    "list":[
+      {"title":"高端品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"热销品牌",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"最新品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      }
+    ]
+  },
+  {"type":"电子",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"办公",
+    "list":[
+      {"title":"高端品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci",
+          "Mont blanc","Armani","Calvin Klein CK"]
+      },
+      {"title":"热销品牌",
+        "item":["Sophie & Stephie","Michael Kors","Swarovski","D&G","Coach","Weekender","Rebecca","Mincoff",
+          "Dior","Aviendo"]
+      },
+      {"title":"最新品牌",
+        "item":["Louis","Vuitton/LV","Chanel","Prada","Fendi","Versace","Burberry","Hermes","Dior","Gucci"
+        ]
+      }
+    ]
+  },
+  {"type":"礼品",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  },
+  {"type":"海外馆",
+    "list":[
+      {"title":"箱包",
+        "item":["单肩包","手提包","手提斜挎包","双肩包","手拿包","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"推荐品牌",
+        "item":["Gucci古琦","Burberry巴宝莉","Louis Vuitton/Lv路易.威登","Prada普拉达","Dior奥迪","钱包","小皮件","旅行箱包","斜跨包","功能箱包"]
+      },
+      {"title":"热门词",
+        "item":["铂金包","2.55","杀手包","经典logo"]
+      }
+    ]
+  }
+]

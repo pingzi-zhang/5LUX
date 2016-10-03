@@ -51,7 +51,7 @@
             }
             this.set(name, arr.join('&'), expires, path, domain, secure);
         };
-
+        //获取所有的cook
         // 获取多值cookie
         this.getAll = function(name) {
             var obj = {};
