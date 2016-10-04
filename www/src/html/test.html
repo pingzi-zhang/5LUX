@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/jquery-1.8.3.js"></script>
+</head>
+<body>
+    <input id="checked" type="checkbox"/>
+<input id="btn" type="button">
+</body>
+</html>
+<script type="text/javascript">
+    $(function(){
+       $("#checked").on("change",function(){
+            console.log("单击了");
+       });
+    });
+    $("#btn").click(function(){
+        $("#checked")[0].checked = true;
+    });
+</script>

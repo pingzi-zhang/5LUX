@@ -57,8 +57,10 @@ $(function() {
         var _img = $imgbox.children("img").attr("src");
         var _price = $pro.find(".price").html();
         var _id = "id"+currentIndex.id;
-        $.cookie.setAll(_id,{disc: _disc, src: _img, price: _price,
-            num:$pro.find(".right").find(".mes").find(".txt").val()});
+        var _num = $pro.find(".right").find(".mes").find(".txt").val();
+
+        $.cookie.setAll(_id,{id:_id,disc: _disc, src: _img, price: _price,
+            num:_num},_getDate(7));
     });
     //立即购买时调到购物车页面
     $pro.find(".pay").children().eq(0).click(function(){

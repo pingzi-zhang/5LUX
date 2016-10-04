@@ -10,7 +10,7 @@
 <div id="container">
     <div id="sidebar">
         <ul class="ul1">
-            <li><span class="first"></span></span><a class="a1" href="#"></a></li>
+            <li><span class="first"></span></span><a class="a1" href="../html/car.html"></a></li>
             <li><span>我的资产</span><a class="a2" href="#"></a></li>
             <li><span>我喜欢的商品</span><a class="a3" href="#"></a></li>
             <li><span>联系客服</span><a class="a4" href="#"></a></li>
@@ -19,7 +19,7 @@
             <li><span class="first"><img src="../image/index/code.jpg"> </span><a class="a1" href="#"></a></li>
             <li><span>意见反馈</span><a class="a2" href="#"></a></li>
             <li><span>联系我们</span><a class="a3" href="#"></a></li>
-            <li><span>返回顶部</span><a class="a4" href="#"></a></li>
+            <li><span>返回顶部</span><p class="returntop" href="#"></p></li>
         </ul>
     </div>
     <div id="logheader">
@@ -37,7 +37,7 @@
                 <input class="psw" type="password"><br/>
                 <input class="check" type="checkbox"> 记住我（下次自动登录）<a href="#">忘记密码？</a><br>
                 <input class="btn" type="button" value="登录">
-                <a href="#">立即注册</a><span>还没有账号?</span>
+                <a href="../html/register.html">立即注册</a><span> 还没有账号?</span>
             </form>
             <div class="bottom">
                 <p>合作网站账号登录</p>
@@ -158,8 +158,11 @@
                 window.open("../index.html","_self");
             }else if($.cookie.getAll(namevalue).psw == undefined){
                 alert("用户名不存在");
+                $("#logmain form .name").val("");
+                $("#logmain form .psw").val("");
             }else{
                 alert("密码不正确");
+                $("#logmain form .psw").val("");
             }
         });
     });

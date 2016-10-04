@@ -2,43 +2,64 @@
  * Created by my on 2016/10/3.
  */
 $(function(){
+    function _getDate(num) {
+        var d = new Date();
+        d.setDate(d.getDate() + num);
+        return d;
+    }
     //获取cookie中的商品信息
     //获取操作的div
-    var span = false;
+    var space = false;
     var allnum = 0;
     var allprice = 0;
     var $ordermes = $("#carmain .orderMes");
     var $list = $ordermes.find(".list");
-    //分割出每条cookie信息
-    var allcookie = document.cookie.split(";");
-    for(var i = 0;i < allcookie.length;i++){
-        var key = allcookie[i].split("=");
-        if(key[0].substring(0,3) == " id"){
-            //当前key为id大头的
-            var currentpro = $.cookie.getAll(key[0].trim());
-            //将每条商品信息添加到购物车页面
-            var newul = $list.find("ul:first").clone();
-            span = true;
-            $(newul).find("img").attr("src",currentpro.src);
-            $(newul).find("p").html(currentpro.disc);
-            $(newul).find(".unitPrice").html(currentpro.price);
-            $(newul).find(".price").html(currentpro.price * currentpro.num);
-            $list.append(newul);
+    //$.cookie.setAll(_id,{disc: _disc, src: _img, price: _price,
+    //    num:$pro.find(".right").find(".mes").find(".txt").val()});
+    //分割出每条cookie信息显示在页面的信息
+    function show(){
+        var allcookie = document.cookie.split(";");
+        for(var i = 0;i < allcookie.length;i++){
+            var key = allcookie[i].split("=");
+            if(/id/.test(key[0])){
+                //当前key为id大头的
+                var currentpro = $.cookie.getAll(key[0].trim());
+                //将每条商品信息添加到购物车页面
+                var newul = $list.find("ul:first").clone();
+                space = true;
+                $(newul).find(".all input").attr("id",currentpro.id);
+                $(newul).find("img").attr("src",currentpro.src);
+                $(newul).find("p").html(currentpro.disc);
+                $(newul).find(".unitPrice").html(currentpro.price);
+                $(newul).find(".number .txt").val(currentpro.num);
+                $(newul).find(".price").html(currentpro.price * currentpro.num);
+                $list.append(newul);
+            }
         }
     }
-    if(span == false){
-        $ordermes.hide();
-    }
+    show();
     //删除用于样式拷贝的第一个ul
     $list.find("ul:first").remove();
-
+    if(space == false){
+        $list.remove();
+        $ordermes.find(".bottom").remove();
+        $ordermes.append("<h2 class='space'>当前还没有商品哦！！</h2>");
+        $ordermes.append("<button class='gotoindex' onclick=goto()>去首页看看>></button>");
+        $ordermes.find(".gotoindex").on("click",function(){
+            window.open("../index.html","_self");
+        });
+    }
     //删除按钮的事件
     $list.find("ul").find(".oper .del").on("click",function(){
-      $(this).parent().parent().remove();
+        save($(this).parent().parent().find(".all .checkbox").attr("id"),"2",-3);
+        window.location.reload();
     });
     //全部删除
     $list.next().find(".clearCar").on("click",function(){
-        $(this).parent().prev().remove();
+        $(this).parent().prev().find("ul .all .checkbox").each(function(index){
+            save($(this).attr("id"),"2",-3);
+        });
+        window.location.reload();
     });
 
     $ordermes.find(".bottom").find(".pay").click(function(){
@@ -48,19 +69,63 @@ $(function(){
         window.open("../index.html");
     });
 
-    //选择框的操作
+
+    //存入cookie
+    function save(_id,num,expr){
+        var allcookie = document.cookie.split(";");
+        for(var i = 0;i < allcookie.length;i++){
+            var key = allcookie[i].split("=");
+            if(_id == key[0].trim()){
+                var currentpro = $.cookie.getAll(key[0].trim());
+                var _id = key[0].trim();
+                var _disc = currentpro.disc;
+                var _src = currentpro.src;
+                var _price = currentpro.price;
+                var _num = num;
+                $.cookie.setAll(_id,{id:_id,disc: _disc, src: _src, price: _price,
+                    num:_num},_getDate(expr));
+            }
+        }
+    }
+    //刷新数据的函数
+    function refreshTotal(){
+        var checkedbox = $list.find(".all").find("input:checked");
+        var total = 0;
+        var numall = 0;
+        checkedbox.each(function(i, value){
+            var num = $.cookie.getSub($(this).attr("id"),"num") || 0;
+            var price = $.cookie.getSub($(this).attr("id"),"price") || 0;
+            numall += parseInt(num);
+            total += num *price;
+        })
+        show_num_price(numall,total);
+    }
+    //根据加减操作 obj $id0是要操作的那一条cookie记录 type是加是减
+    function oprNum(obj, type){
+        var id = $list.find(".all").find("#" + obj);
+        var num = $.cookie.getSub(id.attr("id"),"num") || 0;
+        if (type == "+") {
+            save(id.attr("id"),++num,7);
+            id.parent().parent().find(".number .txt").val(num);
+        }
+        if (type == "-") {
+            if (num > 1) {
+                save(id.attr("id"),--num,7);
+                id.parent().parent().find(".number .txt").val(num);
+            }
+        }
+        var unitprice =parseInt($list.find("ul").find("#"+obj).parent().parent().find(".unitPrice").html()) ;
+        $list.find("ul").find("#"+obj).parent().parent().find(".price").html( unitprice * num);
+        refreshTotal();
+    }
+
+    //选择框的操作全选
     var allflag = 0;
-    $ordermes.find(".title").find("input").on("click",function(){
+    $ordermes.find(".title").find("input").on("change",function(){
         if(allflag == 0){
             $.each($list.find("ul").find(".checkbox"),function(index,obj){
                 obj.checked = true;
                 allflag = 1;
-                //全选时显示价格和价钱
-                //$.each($list.find(".ul1"),function(){
-                //    allprice += parseInt($(this).find(".price").html());
-                //    allnum += parseInt($(this).find(".number").find(".txt").val());
-                //});
-                //show_num_price(allnum,allprice);
             })
         }else{
             $.each($list.find("ul").find(".checkbox"),function(index,obj){
@@ -68,61 +133,33 @@ $(function(){
                 allflag = 0;
             })
         }
+        refreshTotal();
     });
 
-    var flag = 1;
-    $list.find("ul").find(".checkbox").on("click",function(){
-        flag = 1;
-        for(var i = 0;i < $list.find("ul").find(".checkbox").length;i++){
-            if($list.find("ul").find(".checkbox")[i].checked == false){
-                flag = 0;
-            }
-        }
-        if(flag == 0){
-            $ordermes.find(".title").find("input")[0].checked = false;
-            allflag = 0;
-            flag = 0;
-        }else{
+    //单个选择框的操作全选
+    $("#carmain .list ul .checkbox").bind("change", function(){
+        refreshTotal();
+        //console.log($("#carmain .list ul .checkbox:checked").length);
+        if($("#carmain .list ul .checkbox").length == $("#carmain .list ul .checkbox:checked").length){
             $ordermes.find(".title").find("input")[0].checked = true;
-            flag = 1;
-            allflag = 1;
-        }
-    });
-    //选择框的结束
-    //统计一共有多少个商品当checkbox被选中时才统计一共有多少件商品
-     //数量的加减
-    $list.find("ul").find(".checkbox").on("click",function(){
-        allnum += parseInt($(this).parent().parent().find(".number").find(".txt").val());
-        allprice += parseInt($(this).parent().parent().find(".price").html());
-        if($(this)[0].checked == true){
-            $(this).parent().parent().find(".number").find("input.sub").on("click",function(){
-                var $txt = $(this).next();
-                if ($txt.val() > 0) {
-                    $txt.val($txt.val() - 1);
-                    $txt.parent().siblings(".price").html($txt.val() * $txt.parent().siblings(".unitPrice").html());
-                    allnum--;
-                    allprice = allprice - $(this).parent().parent().find(".unitPrice").html();
-                    show_num_price(allnum,allprice);
-                }
-            });
-            $(this).parent().parent().find("input.add").on("click",function (){
-                var $txt = $(this).prev();
-                $txt.val(parseInt($txt.val()) + 1);
-                $txt.parent().siblings(".price").html($txt.val() * $txt.parent().siblings(".unitPrice").html());
-                allnum++;
-                allprice = allprice + parseInt($(this).parent().parent().find(".unitPrice").html());
-                $ordermes.find(".bottom").find(".pricebox").find("span").eq(1).html(allnum);
-                $ordermes.find(".bottom").find(".pricebox").find("span").eq(0).html("¥"+allprice);
-            });
         }else{
-            //allnum -= $(this).parent().parent().find(".number").find("input.txt").val();
+            $ordermes.find(".title").find("input")[0].checked = false;
         }
-        show_num_price(allnum,allprice);
-    });
+    })
+
     //显示总数和总价钱
     function show_num_price(allnum,allprice){
         $ordermes.find(".bottom").find(".pricebox").find("span").eq(1).html(allnum);
         $ordermes.find(".bottom").find(".pricebox").find("span").eq(0).html("¥"+allprice);
     }
+
+    $list.find("input.add").on("click",function (){
+        oprNum($(this).parent().parent().find(".all input").attr("id"), "+");
+    });
+
+    $list.find(".number").find("input.sub").on("click",function(){
+        oprNum($(this).parent().parent().find(".all input").attr("id"), "-");
+    });
+
 });
 

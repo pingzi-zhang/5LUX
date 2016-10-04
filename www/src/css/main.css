@@ -1383,6 +1383,7 @@ h1 {
 
 #carmain .wrap {
   color: #000000;
+  clear: both;
 }
 #carmain .wrap .step {
   margin-bottom: 33px;
@@ -1412,6 +1413,20 @@ h1 {
 #carmain .wrap .orderMes {
   clear: both;
   position: relative;
+}
+#carmain .wrap .orderMes .space {
+  text-align: center;
+  margin: 30px 0;
+}
+#carmain .wrap .orderMes .gotoindex {
+  display: block;
+  margin-left: 430px;
+  width: 120px;
+  height: 50px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #df3338;
+  border: none;
 }
 #carmain .wrap .orderMes .title {
   height: 79px;
