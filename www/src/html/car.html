@@ -5,6 +5,8 @@
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="../css/main.css"/>
     <script src="../lib/jquery-1.8.3.js"></script>
+    <link href="../lib/jquery-ui.css" rel="stylesheet">
+    <script src="../lib/jquery-1.8.3.js"></script>
 </head>
 <body>
 <div id="container">
@@ -40,83 +42,99 @@
             <div class="wrap">
                 <img src="../image/logo.jpg"/>
                 <div class="search">
-                    <input class="txt" type="text" value="爱马仕铂金包">
+                    <input id="autocomplete" title="type &quot;a&quot;" placeholder="爱马仕铂金包">
                     <input class="btn" type="button">
                 </div>
             </div>
         </div>
     </div><!--header end-->
-    <div id="menu">
-        <ul class="downlist">
-            <li><a class="a1" href="#">推荐品牌</a></li>
-            <li><a class="a2" href="#">箱包</a></li>
-            <li><a class="a3" href="#">美妆</a></li>
-            <li><a class="a4" href="#">服装</a></li>
-            <li><a class="a5" href="#">腕表</a></li>
-            <li><a class="a6" href="#">配饰</a></li>
-            <li><a class="a7" href="#">鞋靴</a></li>
-            <li><a class="a8" href="#">母婴</a></li>
-            <li><a class="a9" href="#">美酒</a></li>
-            <li><a class="a10" href="#">美食</a></li>
-            <li><a class="a11" href="#">家居</a></li>
-            <li><a class="a12" href="#">电子</a></li>
-            <li><a class="a13" href="#">办公</a></li>
-            <li><a class="a14" href="#">礼品</a></li>
-            <li><a class="a15" href="#">海外馆</a></li>
-        </ul>
+    <div id="carmain">
         <div class="wrap">
-            <ul>
-                <li><a class="first" href="#">商品分类</a></li>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">最新上架</a></li>
-                <li><a href="#">品牌</a></li>
-                <li><a href="#">女士</a></li>
-                <li><a href="#">男士</a></li>
-                <li><a href="#">腕表</a></li>
-                <li><a href="#">箱包</a></li>
-                <li><a href="#">美妆</a></li>
-                <li><a href="#">生活馆</a></li>
-                <li><a href="#">海外馆</a></li>
-                <li><a href="#">特惠</a></li>
-                <li><a href="#">时尚</a></li>
-                <li><a href="#">名品闪购</a></li>
-                <li><a href="#">礼品区</a></li>
+            <ul class="step">
+                <li class="active">购物车</li>
+                <li>填写核对订单</li>
+                <li>付款</li>
+                <li class="last">订单支付成功</li>
             </ul>
-        </div>
-    </div>
-    <div id="listmain">
-        <div class="wrap">
-            <div class="title">
-                <p>搜索<span>"爱马仕包"</span>总共找到:<span>105</span>件商品</p>
-                <ul>
-                    <li>全部 • </li>
-                    <li>箱包</li>
+            <div class="orderMes">
+                <ul class="title">
+                    <li class="all"><input type="checkbox">全选</li>
+                    <li class="img">&nbsp;</li>
+                    <li class="name">商品名称</li>
+                    <li class="att">商品属性</li>
+                    <li class="unitPrice">购物价</li>
+                    <li class="number">购买数量</li>
+                    <li class="activity">活动信息</li>
+                    <li class="price">小计</li>
+                    <li class="oper">操作</li>
                 </ul>
+                <div class="list">
+                    <ul class="ul1">
+                        <li class="all"><input class="checkbox" type="checkbox"></li>
+                        <li class="img"><img src=""/></li>
+                        <li class="name"><p>&nbsp;</p></li>
+                        <li class="att">&nbsp;</li>
+                        <li class="unitPrice">&nbsp;</li>
+                        <li class="number"><input class="btn sub" type="button" value="-"><input class="txt" type="text" value="1"><input class="btn add" type="button" value="+"></li>
+                        <li class="activity">&nbsp;</li>
+                        <li class="price">&nbsp;</li>
+                        <li class="oper"><a class="del" href="#">删除</a><a href="#">移入收藏夹</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <input class="clearCar" type="button" value="清除购物车">
+                    <div class="pricebox">
+                        <p>商品总额：<span class="totalprice">¥0</span></p>
+                        <p>数量总计：<span class="totalNum">0</span>件</p>
+                        <div class="pricebtn">
+                            <input class="goshop" type="button" value="<<继续购物">
+                            <input class="pay" type="button" value="点击结算">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="list">
-                <ul class="filter">
-                    <li><a href="#">综合</a></li>
-                    <li><a href="#">人气</a></li>
-                    <li><a href="#">新品</a></li>
-                    <li><a href="#">销量</a></li>
-                    <li><a class="last" href="#">价格</a></li>
-                </ul>
+        </div>
+        <div class="sale">
+            <div class="wrap">
+                <h3>99元换购</h3>
                 <dl>
-                    <dt><span></span></dt>
-                    <dd>Hermes爱马仕</dd>
-                    <dd>唐嫣同款Hermes 爱马仕 BIRKIN铂金包30CM紫红色牛皮手袋</dd>
-                    <dd class="price">¥145000.00&nbsp;<del>¥188000.00</del></dd>
+                    <dt><img src="../image/logo/sale1.jpg"></dt>
+                    <dd><h4>Medspa 美帕</h4></dd>
+                    <dd>护肤大礼包</dd>
+                    <dd>第五大道价：¥299.00</dd>
+                    <dd>换购价：<span class="price">¥99.00</span></dd>
+                    <dd><input type="button" value="加入购物车"></dd>
                 </dl>
             </div>
-            <div class="page">
-                <ul>
-                    <li><button  class="special">首页</button></li>
-                    <li><button class="special">前页</button></li>
-                    <li><button class="active">1</button></li>
-                    <li><button>2</button></li>
-                    <li><button class="special">下页</button></li>
-                    <li><button class="special">末页</button></li>
-                </ul>
+        </div>
+        <div class="youlike">
+            <div class="wrap">
+                <p>猜你喜欢</p>
+                <dl>
+                    <dt><span></span><img src="../image/logo/like1.jpg"></dt>
+                    <dd>日夜两用炫彩7色眼</dd>
+                    <dd>RMB:450.00</dd>
+                </dl>
+                <dl>
+                    <dt><span></span><img src="../image/logo/like2.jpg"></dt>
+                    <dd>立体纤长睫毛膏</dd>
+                    <dd>RMB:290.00</dd>
+                </dl>
+                <dl>
+                    <dt><span></span><img src="../image/logo/like3.jpg"></dt>
+                    <dd>真我J'adore女士香</dd>
+                    <dd>RMB:1150.00</dd>
+                </dl>
+                <dl>
+                    <dt><span></span><img src="../image/logo/like4.jpg"></dt>
+                    <dd>【限量版】2014年</dd>
+                    <dd>RMB:868.00</dd>
+                </dl>
+                <dl>
+                    <dt><span></span><img src="../image/logo/like5.jpg"></dt>
+                    <dd>可可小姐浓香水 EDP</dd>
+                    <dd>RMB:1280.00</dd>
+                </dl>
             </div>
         </div>
     </div>
@@ -199,4 +217,35 @@
 </html>
 <script src="../JavaScript/commen.js"></script>
 <script src="../lib/cookie.js"></script>
-<script src="../JavaScript/list.js"></script>
+<script src="../JavaScript/car.js"></script>
+<!--搜索框的功能-->
+<script>
+    var availableTags = [
+        "搜索 爱彼",
+        "搜索 爱彼女表",
+        '找 "爱马仕"相关实体店',
+        "搜索 爱马仕丝巾",
+        "搜索 爱马仕围巾",
+        "搜索 爱马仕香水",
+        "搜索 alma",
+        '找 "阿尼玛"相关实体店',
+        '找 "Sophie & stephie(S&S)"相关实体店',
+        '搜索 "塞琳"',
+        "搜索 saint laurent",
+        "搜索 萨奇",
+        "搜索 圣罗兰",
+        '找 "亚历山大麦昆"相关实体店',
+        "搜索 眼镜",
+        "搜索 YSL",
+        "搜索 钥匙",
+        "搜索 钥匙扣",
+        "搜索 运动",
+        "搜索 羽绒服",
+        "搜索 雨伞",
+        "搜索 Y-3"
+    ];
+
+    $( "#autocomplete" ).autocomplete({
+        source: availableTags
+    });
+</script>

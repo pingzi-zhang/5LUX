@@ -101,7 +101,6 @@ $(function(){
             var currentobj;
             var livalue = $(this).find("a").html();
             //设置#twomenu的高度
-            console.log($(this).parent().offset().top);
             $("#menu .twomenu").offset({"top":$(this).parent().offset().top+ ($(this).index()*35)/2});
            $.each(data,function(index,obj){
                if(obj.type == livalue){

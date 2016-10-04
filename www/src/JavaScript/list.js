@@ -23,7 +23,7 @@ $(function(){
     });
     $("#listmain .list dl").click(function(){
         $.cookie.set("index",$(this).index());
-        window.open("../index/detail.html");
+        window.open("../html/detail.html");
     });
 
 });

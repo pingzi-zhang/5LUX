@@ -147,7 +147,6 @@
 <script type="text/javascript">
     $(function(){
         $("#regmain .title a").mouseover(function(){
-            console.log("nihao");
             $("#regmain form").eq($(this).index()).siblings("form").hide();
             $("#regmain form").eq($(this).index()).show();
             $(this).siblings("a").removeClass("hover");
