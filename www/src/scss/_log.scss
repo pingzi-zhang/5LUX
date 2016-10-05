@@ -469,3 +469,123 @@
   }
 }
 
+#collectmain{
+  .wrap{
+    width: $wrapWidth;
+    margin: 0 auto;
+    height: 760px;
+  }
+  .title{
+    height: 70px;
+    border-bottom: 1px solid #000000;
+    background: url("../image/logo/title.jpg") no-repeat left bottom;
+  }
+  .content{
+    height: 655px;
+    padding-top: 15px;
+  }
+}
+#collectmain .content .left{
+  width: 158px;
+  margin-right: 20px;
+  float: left;
+  .list{
+    h3{
+      @include set-height(32px);
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      background:#c69c6d url("../image/collect/list_sty.jpg") no-repeat 20px;
+    }
+    li{
+      box-shadow: 0px 3px 3px 3px #dfdfdf;
+    }
+  }
+  .sub{
+    overflow: hidden;
+    li{
+      @include set-height(30px);
+      text-align: center;
+      box-shadow: none;
+    }
+  }
+}
+
+
+#collectmain .content .right{
+  width: 825px;
+  float: left;
+  font-size: 17px;
+  @include set-height(30px);
+  h3{
+    border-bottom: 1px solid #dddddd;
+    p{
+      height: 30px;
+      width: 90px;
+      border-bottom:2px solid #cf0101;
+    }
+  }
+  img{
+    margin-top: 10px;
+  }
+  .btn{
+    height: 30px;
+    margin: 15px 0;
+    button{
+      background: none;
+      border: none;
+      color: #ffffff;
+      width: 94px;
+      @include set-height(25px);
+      background-color: $specialTxtCol;
+    }
+  }
+}
+#tabs{
+  margin-top: 15px;
+  width: 824px;
+  font-size: 12px;
+}
+#tabs-1,#tabs-2,#tabs-3{
+  width: 824px;
+  height: 290px;
+  box-shadow: 0px 3px 3px 3px #dfdfdf;
+  padding: 0;
+  background:none;
+  .prolist{
+    width: 734px;
+    height: 290px;
+    float: left;
+    dl{
+      height: 240px;
+      text-align: center;
+      width: 180px;
+      display: inline-block;
+      padding: 0;
+      img{
+        width: 130px;
+        height: 130px;
+      }
+      dd{
+        padding: 0;
+        p{
+          display: inline-block;
+          color: #d73128;
+        }
+      }
+    }
+  }
+  span{
+    display: block;
+    width: 45px;
+    height: 290px;
+    float: left;
+    border: none;
+    &.prev{
+      background: url("../image/collect/gt.jpg") no-repeat center;
+    }
+    &.next{
+      background: url("../image/collect/lt.jpg") no-repeat center;
+    }
+  }
+}

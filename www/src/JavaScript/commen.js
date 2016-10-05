@@ -67,6 +67,18 @@ $(function(){
     $("#menu .wrap .downlist").bind("mouseleave",function(){
         $("#menu .twomenu").stop().hide();
     });
+    //搜索框下的列表点击时进入list.html
+    $("#autocomplete").focus(function(){
+        $(this).keydown(function(event){
+            if(event.keyCode == "13"){
+                if($("#autocomplete").val() == "搜索 爱马仕箱包"){
+                    window.open("html/list.html");
+                }else{
+                    alert("没有此商品信息");
+                }
+            }
+        });
+    });
 });
 
 //创建随机数
@@ -77,3 +89,4 @@ function getRandom(_min,_max){
 function getColor(){
     return "rgb("+parseInt(getRandom(0,256))+","+parseInt(getRandom(0,256))+","+parseInt(getRandom(0,256))+")";
 }
+
